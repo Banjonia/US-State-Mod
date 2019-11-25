@@ -7,7 +7,7 @@ focus_tree = {
     factor = 0
 
     modifier = {
-    add = 30
+    add = 10
     tag = WAW
     }
   }
@@ -835,4 +835,23 @@ focus = {
 
   }
 }
+
+focus = {
+  id = WAW_bring_in_the_workforce
+  icon = GFX_WAW_bring_in_the_workforce
+  prerequisite = { focus = WAW_construction_effort }
+  prerequisite = { focus = WAW_arms_factories_in_olympia }
+  cost = 5
+  x = -12
+  y = 4
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+    remove_ideas = idea_WAW_emigrating_workforce
+    add_ideas = idea_WAW_immigrating_workforce
+  }
+ }
 }

@@ -196,13 +196,13 @@ ideas = {
 	modifier = {
 		MONTHLY_POPULATION = -0.10
 		production_factory_efficiency_gain_factor = -0.10
-		production_factory_max_efficiency_factor = -0.10
+		production_factory_max_efficiency_factor = -0.15
 	}
  }
 
- idea_WAW_powered_factories = {
+ idea_WAW_immigrating_workforce = {
 
-	picture = WAW_emigrating_workforce
+	picture = WAW_immigrating_workforce
 
 	allowed = {
 		always = no
@@ -215,9 +215,29 @@ ideas = {
 	removal_cost = -1
 
 	modifier = {
-		MONTHLY_POPULATION = -0.10
-		production_factory_efficiency_gain_factor = -0.10
-		production_factory_max_efficiency_factor = -0.10
+		MONTHLY_POPULATION = 0.10
+		production_factory_efficiency_gain_factor = 0.10
+		production_factory_max_efficiency_factor = 0.15
+	}
+ }
+
+ idea_WAW_powered_factories = {
+
+	picture = WAW_power_factories
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+		always = yes
+	}
+
+	removal_cost = -1
+
+	modifier = {
+		production_factory_efficiency_gain_factor = 0.05
+		production_factory_max_efficiency_factor = 0.10
 	}
  }
 }

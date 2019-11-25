@@ -65,6 +65,8 @@
  WAW_construction_effort_desc:0 ""
  WAW_arms_factories_in_olympia:0 "Arms Factories In Olympia"
  WAW_arms_factories_in_olympia_desc:0 ""
+ WAW_bring_in_the_workforce:0 "Bring In The Workforce"
+ idea_WAW_immigrating_workforce:0 "Immigrating Workforce"
 
 #Ideas
  WAW_resist_the_bear_idea:0 "Resist The Bear"
@@ -84,6 +86,7 @@
  idea_WAW_emigrating_workforce:0 "Emigrating Workforce"
  WAW_ideas_trade_reforms:0 "Trade Reforms"
  WAW_boeing:0 "Boeing"
+ idea_WAW_powered_factories:0 "Powered Factories"
 
 #Events
  #Cascadian United Front

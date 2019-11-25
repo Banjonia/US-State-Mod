@@ -981,6 +981,10 @@ SpriteType = {
   name = "GFX_WAW_streamline_bomber_production"
   texturefile = "gfx/interface/goals/WAW_streamline_bomber_production.dds"
 }
+SpriteType = {
+  name = "GFX_WAW_bring_in_the_workforce"
+  texturefile = "gfx/interface/goals/WAW_bring_in_the_workforce.dds"
+}
 ###########################################################################################################################
 
 
