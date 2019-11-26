@@ -623,11 +623,11 @@ focus_tree = {
 		completion_reward {
 			add_popularity = {
     			ideology = socialist
-    			popularity = 0.08
+    			popularity = 0.04
     		}
     		add_popularity = {
     			ideology = communism
-    			popularity = 0.1
+    			popularity = 0.08
     		}
     		add_stability = -0.06
 		}
@@ -682,6 +682,67 @@ focus_tree = {
     			popularity = 0.10
     		}
     		add_stability = -0.35
+		}
+	}
+#################################################
+###### COMMUNIST PATH ###########################
+#################################################
+	focus = {
+		id = UTU_lessen_church_power
+		icon = GFX_Generic_Revolutionary_Government
+		x = 5
+		y = 2
+		cost = 10
+		prerequisite = {
+				focus = UTU_drastic_measures
+			}
+		available_if_capitulated = yes
+		completion_reward {
+				add_ideas = UTU_seperationstate
+		}
+	}
+	focus = {
+		id = UTU_basic_income
+		icon = GFX_Generic_Loadsamoney
+		x = 4
+		y = 3
+		cost = 10
+		prerequisite = {
+				focus = UTU_lessen_church_power
+			}
+		available_if_capitulated = yes
+		completion_reward {
+				add_ideas = UTU_basicincome
+		}
+	}
+	focus = {
+		id = UTU_establish_communist_relations
+		icon = GFX_Generic_Market_Socialism
+		x = 6
+		y = 3
+		cost = 10
+		prerequisite = {
+				focus = UTU_lessen_church_power
+			}
+		available_if_capitulated = yes
+		completion_reward {
+				add_ideas = UTU_communistrelations
+		}
+	}
+	focus = {
+		id = UTU_soviet_question
+		icon = GFX_Focus_Stalin
+		x = 5
+		y = 4
+		cost = 10
+		prerequisite = {
+				focus = UTU_lessen_church_power
+			}
+		available_if_capitulated = yes
+		completion_reward {
+			country_event = {
+				id = utah.5
+			}
 		}
 	}
 #################################################

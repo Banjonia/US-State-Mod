@@ -17,7 +17,7 @@ ideas = {
 
       modifier = {
         political_power_gain = -0.10
-        stability_factor = 10
+        add_stability = 0.1
         justify_war_goal_time = 1
       }
     }
@@ -178,6 +178,46 @@ ideas = {
 				socialist_drift = 0.06
 				theocratism_drift = -0.03
 				political_power_gain = -0.05
+      }
+    }
+######################################################
+		UTU_basicincome = {
+      allowed = {
+          always = no
+      }
+
+      allowed_civil_war = {
+          always = yes
+      }
+
+      removal_cost = -1
+
+      picture = GFX_idea_CAC_lesscorptaxidea
+
+      modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.15
+				monthly_population = 15
+      }
+    }
+#####################################################
+		UTU_communistrelations = {
+      allowed = {
+          always = no
+      }
+
+      allowed_civil_war = {
+          always = yes
+      }
+
+      removal_cost = -1
+
+      picture = GFX_idea_CAC_citizenshipbyserviceidea
+
+      modifier = {
+				communism_acceptance = 100
+				communism_drift = 0.06
       }
     }
   }

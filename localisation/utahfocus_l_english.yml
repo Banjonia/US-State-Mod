@@ -18,6 +18,10 @@
  UTU_seperationstate_desc:0 "Utah's government has passed laws that restrict the amount of power the Mormon Church has on it's politics, much to the appeal of socialist causes."
  UTU_democratsinpower:0 "Democrats in Power"
  UTU_democratsinpower_desc:0 "Henry H. Blood is the current leader of Utah, and he is a Democrat."
+ UTU_basicincome:0 "Universal Basic Income"
+ UTU_basicincome_desc:0 "Universal Basic Income"
+ UTU_communistrelations:0 "Establish Communist Relations"
+ UTU_communistrelations_desc:0 "Establish Communist Relations"
 ###### FOCUS STUFF #####
  UTU_industry_start:0 "Kickstart Utahn Industry"
  UTU_industry_start_desc:0 "We must start our industry off strong, for a stable future."
