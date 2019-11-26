@@ -41,6 +41,7 @@ ideas = {
         consumer_goods_factor = 0.25
         communism_drift = 0.005
         socialist_drift = 0.02
+				war_support_weekly = -0.005
       }
     }
 ####################################################
@@ -198,7 +199,7 @@ ideas = {
 				stability_factor = 0.05
 				consumer_goods_factor = 0.05
 				political_power_gain = -0.15
-				monthly_population = 15
+				monthly_population = 1.5
       }
     }
 #####################################################
@@ -218,6 +219,26 @@ ideas = {
       modifier = {
 				communism_acceptance = 100
 				communism_drift = 0.06
+      }
+    }
+####################################################
+		UTU_unions = {
+      allowed = {
+          always = no
+      }
+
+      allowed_civil_war = {
+          always = yes
+      }
+
+      removal_cost = -1
+
+      picture = GFX_idea_WAW_power_factories
+
+      modifier = {
+				communism_drift = 0.5
+				industrial_capacity_factory = 0.25
+	      production_speed_arms_factory_factor = 0.25
       }
     }
   }

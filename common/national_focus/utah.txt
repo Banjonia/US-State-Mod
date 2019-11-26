@@ -745,6 +745,36 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = UTU_invite_hollywood
+		icon = GFX_Generic_Broadway
+		x = 7
+		y = 5
+		cost = 10
+		prerequisite = {
+				focus = UTU_establish_communist_relations
+			}
+		available_if_capitulated = yes
+		completion_reward {
+			country_event = {
+				id = utah.6
+			}
+		}
+	}
+	focus = {
+		id = UTU_create_unions
+		icon = GFX_Generic_Hammer_Star
+		x = 3
+		y = 5
+		cost = 10
+		prerequisite = {
+				focus = UTU_basic_income
+			}
+		available_if_capitulated = yes
+		completion_reward {
+			add_ideas = UTU_unions
+		}
+	}
 #################################################
 ###### DEMOCRATIC PATH ##########################
 #################################################
