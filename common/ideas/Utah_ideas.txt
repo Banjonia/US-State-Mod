@@ -199,7 +199,7 @@ ideas = {
 				stability_factor = 0.05
 				consumer_goods_factor = 0.05
 				political_power_gain = -0.15
-				monthly_population = 1.5
+				monthly_population = 0.15
       }
     }
 #####################################################
@@ -241,5 +241,88 @@ ideas = {
 	      production_speed_arms_factory_factor = 0.25
       }
     }
+####################################################
+		UTU_hollywood = {
+      allowed = {
+          always = no
+      }
+
+      allowed_civil_war = {
+          always = yes
+      }
+
+      removal_cost = -1
+
+      picture = GFX_idea_FLF_Monopolies_Permitted
+
+      modifier = {
+				communism_drift = 0.8
+				socialist_drift = 0.3
+				democratic_drift = 0.2
+      }
+    }
+###################################################
+		UTU_workforceprograms = {
+      allowed = {
+          always = no
+      }
+
+      allowed_civil_war = {
+          always = yes
+      }
+
+      removal_cost = -1
+
+      picture = GFX_idea_WAW_emigrating_workforce
+
+      modifier = {
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.20
+				production_speed_dockyard_factor = 0.10
+				production_speed_naval_base_factor = 0.10
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.20
+      }
+    }
+#######################################################
+		UTU_lessgreatdepression = {
+			allowed = {
+					always = no
+			}
+
+			allowed_civil_war = {
+					always = yes
+			}
+
+			removal_cost = -1
+
+			picture = WAW_idea_crippled_economy
+
+			modifier = {
+				political_power_gain = -0.20
+				stability_factor = -0.09
+				consumer_goods_factor = 0.10
+				socialist_drift = 0.01
+			}
+		}
+########################################################
+		UTU_buyresources = {
+			allowed = {
+					always = no
+			}
+
+			allowed_civil_war = {
+					always = yes
+			}
+
+			removal_cost = -1
+
+			picture = WAW_idea_crippled_economy
+
+			modifier = {
+				consumer_goods_factor = 0.10
+				trade_opinion_factor = 0.30
+			}
+		}
   }
 }

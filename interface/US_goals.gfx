@@ -1088,6 +1088,18 @@ SpriteType = {
   name = "GFX_UTU_wyoming_deal"
   texturefile = "gfx/interface/goals/UTU_wyoming_deal.dds"
 }
+SpriteType = {
+  name = "GFX_UTU_aluminum_mines"
+  texturefile = "gfx/interface/goals/UTU_aluminum_mines.dds"
+}
+SpriteType = {
+  name = "GFX_UTU_chromium_mines"
+  texturefile = "gfx/interface/goals/UTU_chromium_mines.dds"
+}
+SpriteType = {
+  name = "GFX_UTU_steel_mines"
+  texturefile = "gfx/interface/goals/UTU_steel_mines.dds"
+}
 
 ############################################################################################################################
 }
