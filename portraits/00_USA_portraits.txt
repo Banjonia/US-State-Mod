@@ -164,15 +164,6 @@ continent = {
 				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
 				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
 			}
-		}
-		democratic = {
-			male = {
-				"gfx/leaders/generic/USA_portrait_generic_politician_europe_1.dds"
-				"gfx/leaders/generic/USA_portrait_generic_politician_europe_2.dds"
-				"gfx/leaders/generic/USA_portrait_generic_politician_europe_3.dds"
-				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
-				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
-			}
 			female = {
 				"gfx/leaders/generic/Female_Leader_Dictator_Portrait1_Black_result.dds"
 				"gfx/leaders/generic/G1_PNZ_Svea_Rosenblad_SWE_result.dds"
@@ -182,6 +173,15 @@ continent = {
 			
 			}
 		}
+		democratic = {
+			male = {
+				"gfx/leaders/generic/USA_portrait_generic_politician_europe_1.dds"
+				"gfx/leaders/generic/USA_portrait_generic_politician_europe_2.dds"
+				"gfx/leaders/generic/USA_portrait_generic_politician_europe_3.dds"
+				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
+				"gfx/leaders/generic/Portrait_USA_Generic_2.dds"
+			}
+		}
 		fascism = {
 			male = {
 				"gfx/leaders/generic/Portrait_USA_Generic_1.dds"
@@ -189,6 +189,14 @@ continent = {
 				"gfx/leaders/generic/USA_portrait_generic_politician_europe_3.dds"
 				"gfx/leaders/generic/USA_portrait_fascist_1"
 				"gfx/leaders/generic/USA_portrait_fascist_2"
+			}
+			female = {
+				"gfx/leaders/generic/Female_Leader_Dictator_Portrait1_Black_result.dds"
+				"gfx/leaders/generic/G1_PNZ_Svea_Rosenblad_SWE_result.dds"
+				"gfx/leaders/generic/G7_Freja_Rudell_SWE_result.dds"
+				"gfx/leaders/generic/G8_Anastasia_Nicastro_ITA_result.dds"
+				"gfx/leaders/generic/G5_Chun_Li_CHI_result.dds"
+			
 			}
 		}
 		socialist = {
