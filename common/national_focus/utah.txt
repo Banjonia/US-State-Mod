@@ -175,7 +175,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UTU_industry_workforce_programs
-		icon = GFX_Generic_Shady_Deal
+		icon = GFX_Generic_Legislation
 		x = 29
 		y = 3
 		cost = 10
@@ -276,7 +276,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UTU_buy_resources
-		icon = GFX_Generic_Public_Works
+		icon = GFX_Generic_Barrels
 		x = 33
 		y = 3
 		cost = 10
