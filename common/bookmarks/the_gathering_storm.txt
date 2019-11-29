@@ -109,7 +109,6 @@ bookmarks = {
 			}
 			focuses = {
 				VAV_war
-				VAV_industrialpowerhouse
 				vavmonarchy_ethos
 			}
 		}
@@ -129,10 +128,11 @@ bookmarks = {
 		}
 		"WAW" = {
 			minor = yes
-			history = "USA_GATHERING_STORM_DESC"
+			history = "WAW_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				home_of_the_free
+				idea_WAW_crippled_economy
+				idea_WAW_emigrating_workforce
 			}
 			focuses = {
 				WAW_fund_the_boeing_company
