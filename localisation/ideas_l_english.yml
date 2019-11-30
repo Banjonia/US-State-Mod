@@ -2728,6 +2728,8 @@
  DC_secondf:0 "Military Might"
  DC_thirdc:0 "Frontline Quartering"
  DC_thirdf:0 "Mandatory Quartering"
+ DC_crisis:0 "Political Turmoil"
+ DC_stable:0 "The State of the Union"
  CAC_publicworksprogramidea:0 "Public Works Program"
  CAC_guaranteedpensionsidea:0 "Guaranteed Pensions"
  CAC_sweepingtaxreformsidea:0 "A Classless Society"

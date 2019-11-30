@@ -179,3 +179,37 @@ ideas = {
         mobilization_speed = 0.15
       }
     }
+
+		DC_crisis = {
+
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = -0.001
+				political_power_cost = 0.75
+				war_support_factor = -0.30
+			}
+		}
+
+		DC_stable = {
+
+			picture = idea_usa_magic
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = 0.001
+				consumer_goods_factor = -0.05
+				guarantee_tension = -0.25
+				guarantee_cost = -0.20
+			}
+		}
