@@ -1238,6 +1238,23 @@ focus_tree = {
     		add_ideas = UTU_churchschool
 		}
 	}
+	focus = {
+		id = UTU_fascist_mormons
+		icon = GFX_Generic_Colonial_Army
+		x = 9
+		y = 5
+		cost = 10
+		mutually_exclusive = {
+        focus = UTU_investigate_mormons
+    }
+		prerequisite = {
+      focus = UTU_enforce_church_teachings
+    }
+		custom_effect_tooltip = 1_UTU_tt
+		completion_reward {
+    	add_ideas = UTU_mormonfundimental
+		}
+	}
 }
 ######clenchman stinky - FascistThanos
 ###### Well actually, this is my domain, so you are the stinky one here Isaac. - clenchman

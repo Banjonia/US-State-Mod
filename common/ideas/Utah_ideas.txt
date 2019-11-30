@@ -56,7 +56,7 @@ ideas = {
 
       removal_cost = -1
 
-      picture = GFX_idea_democratdonkey
+      picture = democratdonkey
 
       modifier = {
         political_power_gain = 0.25
@@ -317,11 +317,30 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = WAW_idea_crippled_economy
+			picture = GFX_WAW_trade_reforms
 
 			modifier = {
 				consumer_goods_factor = 0.10
 				trade_opinion_factor = 0.30
+			}
+		}
+#######################################################
+		UTU_mormonfundimental = {
+			allowed = {
+					always = no
+			}
+
+			allowed_civil_war = {
+					always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_UTU_utahinflames
+
+			modifier = {
+				fascism_drift = 0.08
+				fascism_acceptance = 75
 			}
 		}
   }

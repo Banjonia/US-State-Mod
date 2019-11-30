@@ -28,6 +28,8 @@
  UTU_buyresources:0 "Resource Deals"
  UTU_lessgreatdepression:0 "Depression Recovery"
  UTU_greatdepression_desc:0 "The Great Depression has hit Utah very hard. However, our government has mostly fixed the damage that has been done, and we are on our way to a full recovery."
+ UTU_mormonfundimental:0 "Mormon Fundimentalism"
+
 ###### FOCUS STUFF #####
  UTU_industry_start:0 "Kickstart Utahn Industry"
  UTU_industry_start_desc:0 "We must start our industry off strong, for a stable future."
