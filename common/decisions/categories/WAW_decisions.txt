@@ -1,0 +1,13 @@
+WAW_resource = {
+
+  icon = GFX_decision_category_generic_prospect_for_resources
+  picture = GFX_WAW_decision_resource_full
+
+  visible = {
+    #has_completed_focus = WAW_excavation_orders
+  }
+
+  available = {
+    original_tag = WAW
+  }
+}

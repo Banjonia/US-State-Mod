@@ -66,7 +66,9 @@
  WAW_arms_factories_in_olympia:0 "Arms Factories In Olympia"
  WAW_arms_factories_in_olympia_desc:0 ""
  WAW_bring_in_the_workforce:0 "Bring In The Workforce"
- idea_WAW_immigrating_workforce:0 "Immigrating Workforce"
+ WAW_excavation_orders:0 "Open The Excavation Orders"
+ WAW_civ_factories_in_the_plains:0 "Consumer Factories In The Plains"
+ WAW_further_infrastructure_funding:0 "Further Infrastructure Funding"
 
 #Ideas
  WAW_resist_the_bear_idea:0 "Resist The Bear"
@@ -87,6 +89,7 @@
  WAW_ideas_trade_reforms:0 "Trade Reforms"
  WAW_boeing:0 "Boeing"
  idea_WAW_powered_factories:0 "Powered Factories"
+ idea_WAW_immigrating_workforce:0 "Immigrating Workforce"
 
 #Events
  #Cascadian United Front
@@ -137,6 +140,12 @@
   washington.11.d:0 "Following the Great Collapse, we reached out to several aircraft manufacturers to revitalize our Air Force. Boeing, staying true to their roots, was the company most interested in military cooperation. A partnership between Boeing and the WAF would certainly be beneficial for our strategic air campaigns. We should reach out and finalize the deal."
   washington.11.a:0 "Brilliant!"
 
+#Descisions
+  WAW_resource:0 "Excavation Orders"
+  WAW_resource_desc:0 "We have not fully exploited the maximum potential of our resources and need to take advantage of our prosperous lands. We can start surveying our lands in hope of discovering precious resources to power our expanding industry."
+  WAW_excavate_for_iron_plains:0 "Excavate For Iron"
+  WAW_survey_the_plains:0 "Survey The Plains"
+
 #Custom Tooltips
  #Appease California
   WAW_appease_california_tt:0 "§RAppeasing California could lead to the loss of our sovereignty.§!\n*"
@@ -145,3 +154,5 @@
 #Other
   #Unfunded Military
   WAW_unfunded_military:0 "Unfunded Military"
+  #Bookmark
+  WAW_GATHERING_STORM_DESC:0 "With its damaged economy and emigrating workforce, The State of Washington is in political turmoil. There are those who wish to stay true to democracy under the rule of California, and others who want to go to more extremes. The decisions made will be crucial to the survival of Washington and determine if anything will be repaired."

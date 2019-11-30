@@ -1,0 +1,131 @@
+WAW_resource = {
+#PLAINS
+  WAW_survey_the_plains = {
+
+    icon = GFX_decision_steel
+
+    allowed = {
+
+    }
+
+    cancel_if_not_visible = yes
+
+    visible = {
+     original_tag = WAW
+    }
+
+    available = {
+
+    }
+
+    cost = 150
+
+    days_remove = 0
+
+    fire_only_once = yes
+
+    complete_effect = {
+
+    }
+  }
+  WAW_excavate_for_iron_plains = {
+
+    icon = GFX_decision_steel
+
+    allowed = {
+
+    }
+
+    cancel_if_not_visible = yes
+
+    visible = {
+      original_tag = WAW
+      has_decision = WAW_survey_the_plains
+    }
+
+    available = {
+      has_decision = WAW_survey_the_plains
+    }
+
+    cost = 75
+
+    days_remove = 30
+
+    fire_only_once = yes
+
+    complete_effect = {
+      add_resource = {
+        type = steel
+        amount = 10
+        state = 386
+      }
+    }
+  }
+  WAW_excavate_for_aluminium_plains = {
+
+    icon = GFX_decision_aluminium
+
+    allowed = {
+
+    }
+
+    cancel_if_not_visible = yes
+
+    visible = {
+      original_tag = WAW
+      has_decision = WAW_survey_the_plains
+    }
+
+    available = {
+      has_decision = WAW_survey_the_plains
+    }
+
+    cost = 75
+
+    days_remove = 30
+
+    fire_only_once = yes
+
+    complete_effect = {
+      add_resource = {
+        type = aluminium
+        amount = 10
+        state = 810
+      }
+    }
+  }
+  WAW_drill_for_oil_plains = {
+
+    icon = GFX_decision_oil
+
+    allowed = {
+
+    }
+
+    cancel_if_not_visible = yes
+
+    visible = {
+      original_tag = WAW
+      has_decision = WAW_survey_the_plains
+    }
+
+    available = {
+      has_decision = WAW_survey_the_plains
+    }
+
+    cost = 75
+
+    days_remove = 30
+
+    fire_only_once = yes
+
+    complete_effect = {
+      add_resource = {
+        type = oil
+        amount = 8
+        state = 810
+      }
+    }
+  }
+#PLAINS
+}
