@@ -2192,4 +2192,8 @@ spriteTypes = {
 		name = "GFX_event_WAW_boeing"
 		texturefile = "gfx/event_pictures/WAW_event_boeing.dds"
 	}
+	spritetype = {
+		name = "GFX_WDC_constitution"
+		texturefile = "gfx/event_pictures/WDC_constitution.dds"
+	}
 }
