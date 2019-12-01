@@ -1550,23 +1550,23 @@ focus_tree = {
 		}
 
 
-			completion_reward = {
-					add_ideas = CAC_local_security
-					add_political_power = 120
-					set_rule = {
-							can_create_factions = yes
-						}
-					set_rule = {
-							can_send_volunteers = yes
-						}
+		completion_reward = {
+			add_ideas = CAC_local_security
+			add_political_power = 120
+			set_rule = {
+				can_create_factions = yes
+				}
+				set_rule = {
+					can_send_volunteers = yes
+					}
 					create_faction = "california_democratic_faction"
 					hidden_effect = {
-							news_event = {
-									hours = 6
-									id = genericfocusnews.1
-								}
+						news_event = {
+							hours = 6
+							id = genericfocusnews.1
+							}
 						}
-				}
+			}
 
 	}
 	focus = {
