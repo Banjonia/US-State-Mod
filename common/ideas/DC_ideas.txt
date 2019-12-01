@@ -198,7 +198,7 @@ ideas = {
 
 		DC_stable = {
 
-			picture = idea_usa_magic
+			picture = usa_magic
 
 			allowed = {
 				always = no
@@ -211,5 +211,115 @@ ideas = {
 				consumer_goods_factor = -0.05
 				guarantee_tension = -0.25
 				guarantee_cost = -0.20
+			}
+		}
+
+		DC_wpa = {
+
+			picture = man_five_year_plan_industry
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+
+		DC_mic = {
+
+			picture = man_five_year_plan_tank
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+
+		DC_jobs = {
+
+			picture = generic_production_bonus
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.20
+			}
+		}
+
+		DC_ssa = {
+
+			picture = rom_carol_ii_hedonist
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		DC_publicworks = {
+
+			picture = generic_build_infrastructure
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+
+		DC_onestepahead = {
+
+			picture = generic_fortify_the_borders
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_bunker_factor = 0.10
+			}
+		}
+
+		DC_newdeal = {
+
+			picture = new_deal
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				monthly_population = 0.20
+				consumer_goods_factor = -0.05
+				production_speed_infrastructure_factor = 0.15
+				production_speed_bunker_factor = 0.10
 			}
 		}
