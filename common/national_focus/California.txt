@@ -2695,10 +2695,15 @@ focus_tree = {
 		prerequisite = {
 			focus = CAC_statecontrolledmedia
 		}
+		available = {
+			fascism > 0.25
+			has_political_power = 100
+		}
 		x = 11
 		y = 4
 			completion_reward = {
 					remove_ideas = CAC_unstablepolitics
+					add_political_power = -100
 				}
 
 	}
@@ -2781,6 +2786,36 @@ focus_tree = {
 				create_wargoal = {
 						type = annex_everything
 						target = WYW
+					}
+				}
+	}
+
+	focus = {
+		id = CAC_DavissMarch7
+		icon = GFX_Generic_Revanchism02
+		cost = 10.00
+		prerequisite = {
+			focus = CAC_DavissMarch2
+		}
+		prerequisite = {
+			focus = CAC_DavissMarch3
+		}
+		x = 9
+		y = 7
+		bypass = {
+				TXT = {
+						OR = {
+								exists = no
+								AND = {
+										is_in_faction_with = ROOT
+									}
+							}
+					}
+			}
+			completion_reward = {
+				create_wargoal = {
+						type = annex_everything
+						target = TXT
 					}
 				}
 	}
