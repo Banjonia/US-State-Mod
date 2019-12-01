@@ -218,4 +218,182 @@ continuous_focus_position = { x = 50 y = 1000 }
     }
 
   }
+
+  focus = {
+    id = DC_democratic7
+    icon = GFX_Generic_Democracy
+    prerequisite = {focus = DC_democratic6}
+
+    x = 0
+    y = 1
+
+    relative_position_id = DC_democratic6
+
+    cost = 10
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+
+    completion_reward = {
+      add_country_leader_trait = great_reformer
+    }
+  }
+
+  focus = {
+    id = DC_democratic8
+    icon = GFX_Generic_Workers_Democracy
+    prerequisite = {focus = DC_democratic7}
+
+    x = -2
+    y = 1
+
+    relative_position_id = DC_democratic7
+
+    cost = 10
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+
+    completion_reward = {
+      add_ideas = DC_wpa
+    }
+  }
+
+  focus = {
+    id = DC_democratic9
+    icon = GFX_focus_usa_guarantee_the_american_dream
+    prerequisite = {focus = DC_democratic7}
+
+    x = 0
+    y = 1
+
+    relative_position_id = DC_democratic7
+
+    cost = 10
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+
+    completion_reward = {
+      add_ideas = DC_ssa
+    }
+  }
+
+  focus = {
+    id = DC_democratic10
+    icon = GFX_goal_generic_construct_mil_factory
+    prerequisite = {focus = DC_democratic7}
+
+    x = 2
+    y = 1
+
+    relative_position_id = DC_democratic7
+
+    cost = 10
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+
+    completion_reward = {
+      add_ideas = DC_mic
+    }
+  }
+
+  focus = {
+    id = DC_democratic11
+    icon = GFX_focus_eng_concessions_to_the_trade_unions
+    prerequisite = {focus = DC_democratic8}
+
+    x = 0
+    y = 1
+
+    relative_position_id = DC_democratic8
+
+    cost = 10
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+
+    completion_reward = {
+      add_ideas = DC_jobs
+    }
+  }
+
+  focus = {
+    id = DC_democratic12
+    icon = GFX_goal_generic_production
+    prerequisite = {focus = DC_democratic9}
+
+    x = 0
+    y = 1
+
+    relative_position_id = DC_democratic9
+
+    cost = 10
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+
+    completion_reward = {
+      add_ideas = DC_publicworks
+    }
+  }
+
+  focus = {
+    id = DC_democratic13
+    icon = GFX_goal_generic_fortify_city
+    prerequisite = {focus = DC_democratic10}
+
+    x = 0
+    y = 1
+
+    relative_position_id = DC_democratic10
+
+    cost = 10
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+
+    completion_reward = {
+      add_ideas = DC_onestepahead
+    }
+  }
+
+  focus = {
+    id = DC_democratic14
+    icon = GFX_goal_unknown
+    prerequisite = {focus = DC_democratic11}
+    prerequisite = {focus = DC_democratic12}
+    prerequisite = {focus = DC_democratic13}
+
+
+    x = 0
+    y = 1
+
+    relative_position_id = DC_democratic12
+
+    cost = 10
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+
+    completion_reward = {
+      remove_ideas = DC_wpa
+      remove_ideas = DC_ssa
+      remove_ideas = DC_mic
+      remove_ideas = DC_jobs
+      remove_ideas = DC_publicworks
+      remove_ideas = DC_onestepahead
+      add_ideas = DC_newdeal
+    }
+  }
+
 }
