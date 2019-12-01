@@ -128,3 +128,76 @@ country_event = {
     country_event = dc.1
   }
 }
+
+# An offer to Maryland
+country_event = {
+  id = dc.6
+  title = dc.6.t
+  desc = dc.6.d
+  picture = GFX_report_event_generic_usa_treaty
+
+  is_triggered_only = yes
+
+  option = {
+    name = dc.6.a
+    ai_chance = { factor = 50 }
+    MDM = {
+      every_unit_leader = {
+        set_unit_leader_flag = flag_former_maryland_general
+        set_nationality = WDC
+      }
+    }
+    WDC = {
+      country_event = dc.8
+      annex_country = { target = MDM transfer_troops = yes }
+      add_state_core = 971
+      add_state_core = 908
+      add_state_core = 909
+      add_state_core = 361
+    }
+  }
+  option = {
+    name = dc.6.b
+    ai_chance = { factor = 50 }
+    WDC = {
+      country_event = dc.7
+    }
+  }
+}
+# Maryland refuses
+
+country_event = {
+  id = dc.7
+  title = dc.7.t
+  desc = dc.7.d
+  picture = GFX_report_event_soldiers_marching
+
+  is_triggered_only = yes
+
+  option = {
+    name = dc.7.a
+    ai_chance = { factor = 1 }
+    WDC = {
+      create_wargoal = {
+        type = annex_everything
+        target = MDM
+      }
+    }
+  }
+}
+
+# Maryland Accepts
+
+country_event = {
+  id = dc.8
+  title = dc.8.t
+  desc = dc.8.d
+  picture = GFX_WDC_soldiers_flag
+
+  is_triggered_only = yes
+
+  option = {
+    name = dc.8.a
+    ai_chance = { factor = 1 }
+  }
+}

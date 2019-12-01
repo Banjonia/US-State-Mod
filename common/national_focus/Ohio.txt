@@ -430,7 +430,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = OHO_agressivedemo
+		id = OHO_aggressivedemo
 		icon = GFX_goal_generic_demand_territory
 		cost = 10.00
 		prerequisite = {
@@ -443,6 +443,7 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			add_ideas = OHO_agressivedemo
+			set_rule = { can_send_volunteers = yes }
 		}
 	}
 	focus = {
@@ -450,7 +451,7 @@ focus_tree = {
 		icon = GFX_OHO_firststrike
 		cost = 10.00
 		prerequisite = {
-			focus = OHO_agressivedemo
+			focus = OHO_aggressivedemo
 		}
 		x = 11
 		y = 4
@@ -557,7 +558,7 @@ focus_tree = {
 			focus = OHO_ourownpath
 		}
 		mutually_exclusive = {
-			focus = OHO_agressivedemo
+			focus = OHO_aggressivedemo
 		}
 		x = 15
 		y = 3

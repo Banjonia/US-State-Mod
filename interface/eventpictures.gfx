@@ -2196,4 +2196,12 @@ spriteTypes = {
 		name = "GFX_WDC_constitution"
 		texturefile = "gfx/event_pictures/WDC_constitution.dds"
 	}
+	spritetype = {
+		name = "GFX_news_event_state_of_the_union"
+		texturefile = "gfx/event_pictures/news_event_state_of_the_union.dds"
+	}
+	spritetype = {
+		name = "GFX_WDC_soldiers_flag"
+		texturefile = "gfx/event_pictures/WDC_soldiers_flag.dds"
+	}
 }

@@ -212,11 +212,13 @@ continuous_focus_position = { x = 50 y = 1000 }
     available_if_capitulated = no
 
     completion_reward = {
+      news_event = {
+        hours = 1
+        id = genericfocusnews.2
+      }
       add_ideas = DC_stable
       add_stability = 0.05
-
     }
-
   }
 
   focus = {
@@ -396,4 +398,195 @@ continuous_focus_position = { x = 50 y = 1000 }
     }
   }
 
+  focus = {
+    id = DC_democratic15
+    icon = GFX_goal_unknown
+    prerequisite = { focus = DC_democratic14 }
+
+    x = 0
+    y = 1
+
+    relative_position_id = DC_democratic14
+
+    cost = 10
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+
+    completion_reward = {
+      MDM = {
+        country_event = dc.6
+      }
+    }
+  }
+
+  focus = {
+    id = DC_democratic16
+    icon = GFX_goal_generic_air_naval_bomber
+    prerequisite = { focus = DC_democratic15 }
+
+    x = -4
+    y = 1
+
+    relative_position_id = DC_democratic15
+
+    cost = 10
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+
+    completion_reward = {
+      add_ideas = DC_gunboat
+    }
+  }
+
+  focus = {
+    id = DC_democratic17
+    icon = GFX_Generic_Revanchism02
+    prerequisite = { focus = DC_democratic16 }
+
+    x = -2
+    y = 1
+
+    relative_position_id = DC_democratic16
+
+    cost = 10
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+
+    completion_reward = {
+      create_wargoal = {
+        type = annex_everything
+        target = DED
+      }
+    }
+  }
+
+  focus = {
+    id = DC_democratic18
+    icon = GFX_Generic_Revanchism02
+    prerequisite = { focus = DC_democratic16 }
+
+    x = 0
+    y = 1
+
+    relative_position_id = DC_democratic16
+
+    cost = 10
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+
+    completion_reward = {
+      create_wargoal = {
+        type = annex_everything
+        target = VAV
+      }
+    }
+  }
+
+  focus = {
+    id = DC_democratic19
+    icon = GFX_Generic_Revanchism02
+    prerequisite = { focus = DC_democratic16 }
+
+    x = 2
+    y = 1
+
+    relative_position_id = DC_democratic16
+
+    cost = 10
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+
+    completion_reward = {
+      create_wargoal = {
+        type = annex_everything
+        target = PAP
+      }
+    }
+  }
+
+  focus = {
+    id = DC_democratic20
+    icon = GFX_Generic_Revanchism02
+    prerequisite = { focus = DC_democratic17 }
+
+    x = 0
+    y = 1
+
+    relative_position_id = DC_democratic17
+
+    cost = 10
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+
+    completion_reward = {
+      create_wargoal = {
+        type = annex_everything
+        target = WVW
+      }
+    }
+  }
+
+  focus = {
+    id = DC_democratic21
+    icon = GFX_Generic_Revanchism02
+    prerequisite = { focus = DC_democratic19 }
+
+    x = 0
+    y = 1
+
+    relative_position_id = DC_democratic19
+
+    cost = 10
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+
+    completion_reward = {
+      create_wargoal = {
+        type = annex_everything
+        target = NJN
+      }
+    }
+  }
+
+  focus = {
+    id = DC_democratic22
+    icon = GFX_Generic_Revanchism02
+    prerequisite = { focus = DC_democratic18 }
+
+    x = 0
+    y = 1
+
+    relative_position_id = DC_democratic18
+
+    cost = 10
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+
+    completion_reward = {
+      create_wargoal = {
+        type = annex_everything
+        target = NCN
+      }
+      create_wargoal = {
+        type = annex_everything
+        target = SCS
+      }
+    }
+  }
 }

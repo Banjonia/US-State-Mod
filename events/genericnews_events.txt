@@ -2,7 +2,7 @@
 
 # REMINDER | This event file is used for focus trees that launch global news events.
 
-
+# California Defense of Democracy
 news_event = {
   id = genericfocusnews.1
   title = genericfocusnews.1.t
@@ -23,5 +23,55 @@ news_event = {
   option = {
     name = genericfocusnews.1.b
     trigger = { TAG = CAC }
+  }
+}
+
+# D.C. State of the Union
+news_event = {
+  id = genericfocusnews.2
+  title = genericfocusnews.2.t
+  desc = genericfocusnews.2.d
+  picture = GFX_news_event_state_of_the_union
+  is_triggered_only = yes
+
+  major = yes
+
+  option = {
+    name = genericfocusnews.2.a
+    trigger = {
+      NOT = {
+        TAG = WDC
+      }
+      AND = {
+        has_government = democratic
+      }
+    }
+  }
+  option = {
+    name = genericfocusnews.2.b
+    trigger = { TAG = WDC }
+  }
+
+  option = {
+    name = genericfocusnews.2.c
+    trigger = {
+      NOT = {
+        TAG = WDC
+      }
+      AND = {
+        has_government = communism
+      }
+    }
+  }
+  option = {
+    name = genericfocusnews.2.e
+    trigger = {
+      NOT = {
+        TAG = WDC
+      }
+      AND = {
+        has_government = fascism
+      }
+    }
   }
 }

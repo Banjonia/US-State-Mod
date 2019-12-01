@@ -323,3 +323,19 @@ ideas = {
 				production_speed_bunker_factor = 0.10
 			}
 		}
+
+		DC_gunboat = {
+
+			picture = liberty_ships_focus
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				justify_war_goal_time = -0.2
+				generate_wargoal_tension = -0.25
+			}
+		}
