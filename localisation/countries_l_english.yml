@@ -3162,7 +3162,7 @@
  FACTION_NAME_theocratism_2:0 "$LEADER_COUNTRY_ADJ$ Holy Entente"
  FACTION_NAME_theocratism_3:0 "Holy Alliance of $LEADER_COUNTRY$"
  FACTION_NAME_theocratism_4:0 "Pact of God"
- 
+
  socialist_drift:0 "Daily Socialism Support"
  theocratism_drift:0 "Daily Theocratism Support"
- monarchy:0 "Daily Monarchism Support"
+ monarchy_drift:0 "Daily Monarchism Support"
