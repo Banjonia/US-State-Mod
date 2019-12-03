@@ -2204,4 +2204,12 @@ spriteTypes = {
 		name = "GFX_WDC_soldiers_flag"
 		texturefile = "gfx/event_pictures/WDC_soldiers_flag.dds"
 	}
+	spritetype = {
+		name = "GFX_news_event_whitehouse2"
+		texturefile = "gfx/event_pictures/news_event_whitehouse2.dds"
+	}
+	spritetype = {
+		name = "GFX_news_event_dccapitol"
+		texturefile = "gfx/event_pictures/news_event_dccapitol.dds"
+	}
 }
