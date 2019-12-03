@@ -124,7 +124,7 @@ set_technology = {
 
 
 set_convoys = 100
-set_stability = 0.4
+set_stability = 0.3
 
 set_politics = {
 
@@ -137,9 +137,9 @@ add_ideas = {
 
 }
 set_popularities = {
-	democratic = 74
-	communism = 12
-	fascism = 14
+	democratic = 52
+	communism = 22
+	fascism = 26
 }
 create_country_leader = {
 	name = "James Michael Curley"
@@ -169,7 +169,7 @@ create_country_leader = {
 	}
 }
 1939.1.1 = {
-	set_stability = 0.4
+	set_stability = 0.3
 
 	set_politics = {
 
@@ -180,9 +180,9 @@ create_country_leader = {
 	}
 }
 set_popularities = {
-	democratic = 74
-	communism = 12
-	fascism = 14
+	democratic = 52
+	communism = 22
+	fascism = 26
 }
 ### Ship Variants ###
 
