@@ -73,7 +73,7 @@ continuous_focus_position = { x = 50 y = 1000 }
     icon = GFX_Generic_Blue_Democracy
     prerequisite = {focus = DC_divided}
 
-    x = -10
+    x = -8
     y = 1
 
     relative_position_id = DC_divided
@@ -140,6 +140,7 @@ continuous_focus_position = { x = 50 y = 1000 }
 
     completion_reward = {
       add_political_power = 50
+      add_stability = 0.03
     }
   }
 
@@ -165,6 +166,7 @@ continuous_focus_position = { x = 50 y = 1000 }
 
     completion_reward = {
       add_political_power = 50
+      add_stability = 0.03
     }
   }
 
@@ -190,6 +192,7 @@ continuous_focus_position = { x = 50 y = 1000 }
 
     completion_reward = {
       add_political_power = 50
+      add_stability = 0.03
     }
   }
 
@@ -343,6 +346,9 @@ continuous_focus_position = { x = 50 y = 1000 }
     available_if_capitulated = no
 
     completion_reward = {
+      879 = {
+        add_extra_state_shared_building_slots = 2
+      }
       add_ideas = DC_publicworks
     }
   }
@@ -586,6 +592,216 @@ continuous_focus_position = { x = 50 y = 1000 }
       create_wargoal = {
         type = annex_everything
         target = SCS
+      }
+    }
+  }
+
+  focus = {
+    id = DC_fascist1
+    icon = GFX_Generic_Ultranationalist_Government
+    prerequisite = { focus = DC_divided }
+
+    x = 0
+    y = 1
+
+    relative_position_id = DC_divided
+
+    cost = 10
+
+    completion_reward = {
+      add_stability = -0.05
+      add_war_support = 0.10
+      add_popularity = {
+        ideology = fascism
+        popularity = 0.25
+      }
+      hidden_effect = {
+        news_event = {
+          hours = 1
+          id = genericfocusnews.3
+        }
+      }
+    }
+  }
+
+  focus = {
+    id = DC_fascist2
+    icon = GFX_Generic_Ripping_Papers
+    prerequisite = { focus = DC_fascist1 }
+
+    x = 0
+    y = 1
+
+    relative_position_id = DC_fascist1
+
+    cost = 10
+
+    completion_reward = {
+      add_stability = 0.05
+    }
+  }
+
+
+  focus = {
+    id = DC_fascist4
+    icon = GFX_Generic_Political_Purge
+    prerequisite = { focus = DC_fascist2 }
+
+    x = -2
+    y = 1
+
+    relative_position_id = DC_fascist2
+
+    cost = 10
+
+    completion_reward = {
+
+    }
+  }
+
+
+  focus = {
+    id = DC_fascist5
+    icon = GFX_Generic_Espionage04
+    prerequisite = { focus = DC_fascist4 }
+
+    x = 0
+    y = 1
+
+    relative_position_id = DC_fascist4
+
+    cost = 10
+
+    completion_reward = {
+
+    }
+  }
+
+  focus = {
+    id = DC_fascist6
+    icon = GFX_Generic_Lookout
+    prerequisite = { focus = DC_fascist2 }
+
+    x = 2
+    y = 1
+
+    relative_position_id = DC_fascist2
+
+    cost = 10
+
+    completion_reward = {
+
+    }
+  }
+
+  focus = {
+    id = DC_fascist7
+    icon = GFX_Generic_Arrests
+    prerequisite = { focus = DC_fascist6 }
+
+    x = 0
+    y = 1
+
+    relative_position_id = DC_fascist6
+
+    cost = 10
+
+    completion_reward = {
+      add_stability = 0.10
+    }
+  }
+
+  focus = {
+    id = DC_fascist8
+    icon = GFX_Generic_Ultranationalist_Volunteers
+    prerequisite = { focus = DC_fascist2 }
+
+    x = 0
+    y = 3
+
+    relative_position_id = DC_fascist2
+
+    cost = 10
+
+    completion_reward = {
+      remove_ideas = dc_crisis
+    }
+  }
+
+  focus = {
+    id = DC_fascist9
+    icon = GFX_Generic_Ultranationalist_Volunteers
+    prerequisite = { focus = DC_fascist8 }
+    mutually_exclusive = { focus = DC_fascist10 }
+
+    x = -1
+    y = 1
+
+    relative_position_id = DC_fascist8
+
+    cost = 10
+
+    completion_reward = {
+      create_country_leader = {
+        name = "Douglas Macarthur"
+        desc = POLITICS_WDC_DOUGLAS_MACARTHUR_DESC
+        picture = "Portrait_WDC_Douglas_Macarthur.dds"
+        expire = "1965.1.1"
+        ideology = rexism
+        traits = { american_caesar }
+      }
+      add_war_support = 0.10
+    }
+  }
+
+  focus = {
+    id = DC_fascist10
+    icon = GFX_Generic_Imperial_Eagle
+    prerequisite = { focus = DC_fascist8 }
+    mutually_exclusive = { focus = DC_fascist9 }
+
+    x = 1
+    y = 1
+
+    relative_position_id = DC_fascist8
+
+    cost = 10
+
+    completion_reward = {
+      create_country_leader = {
+        name = "Alvin M. Owsley"
+        desc = POLITICS_WDC_ALVIN_OWLSEY_DESC
+        picture = "Portrait_WDC_Alvin_Owsley.dds"
+        expire = "1965.1.1"
+        ideology = falangism
+        traits = { rearmer }
+      }
+      add_stability = 0.10
+    }
+  }
+
+  focus = {
+    id = DC_communist1
+    icon = GFX_Generic_Revolutionary_Government
+    prerequisite = { focus = DC_divided }
+
+    x = 8
+    y = 1
+
+    relative_position_id = DC_divided
+
+    cost = 10
+
+    completion_reward = {
+      add_popularity = {
+        ideology = communism
+        popularity = 0.30
+      }
+      hidden_effect = {
+        news_event = {
+          hours = 1
+          id = genericfocusnews.4
+        }
       }
     }
   }

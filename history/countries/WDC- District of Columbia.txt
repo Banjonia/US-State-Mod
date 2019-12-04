@@ -128,16 +128,48 @@ set_popularities = {
 }
 
 create_country_leader = {
- 		name = "Franklin D. Roosevelt"
-		#desc = ""
-		picture = "Portrait_WDC_Franklin_Roosevelt.dds"
-		expire = "1945.4.12"
-		ideology = liberalism
-		traits = {
-				exiled
-						}
-					}
+ 	name = "Franklin D. Roosevelt"
+	#desc = ""
+	picture = "Portrait_WDC_Franklin_Roosevelt.dds"
+	expire = "1945.4.12"
+	ideology = liberalism
+	traits = {
+		exiled
+	}
+}
 
+create_corps_commander = {
+	name = "William E.R. Covell"
+	picture = "Portrait_WDC_William_Covell.dds"
+	traits = { trait_engineer organizer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Bruce Magruder"
+	picture = "Portrait_WDC_Bruce_Magruder.dds"
+	traits = { trickster }
+	skill = 1
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Vernon Prichard"
+	picture = "Portrait_WDC_Vernon_Prichard.dds"
+	traits = { panzer_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}
 
 1939.1.1 = {
 	set_stability = 0.6

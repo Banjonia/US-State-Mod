@@ -1,0 +1,41 @@
+UTU_factories = {
+  UTU_factories_1 = {
+
+    icon = decision_generic_industry
+
+    allowed = {
+
+    }
+
+    cancel_if_not_visible = yes
+
+    visible = {
+      has_completed_focus = UTU_industry_buildup_east
+    }
+
+    cost = 150
+
+    days_remove = 130
+
+    fire_only_once = yes
+
+    highlight_states = {
+			state = 841
+		}
+
+    complete_effect = {
+      841 = {
+        add_extra_state_shared_building_slots = 2
+        add_building_construction = {
+          type = industrial_complex
+          level = 2
+          instant_build = yes
+        }
+      }
+    }
+
+    ai_will_do = {
+      factor = 100
+    }
+  }
+}

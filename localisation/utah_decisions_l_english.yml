@@ -32,3 +32,6 @@
  industrybill.d:0 "Some officals have put forth a plan that will advance and industrialize our weak state. We could focus more on our civilian complexes, easing the effects of the depression, or we could focus on connecting our state with roads and better infrastructure."
  industrybill.a:0 "We must focus on civilian factories."
  industrybill.b:0 "Our state is very rural. We should try and fix that first."
+ interstatecomplete.t:0 "The Completion of the Interstate"
+ interstatecomplete.d:0 "With the construction of the interstate complete, we can now move on to industrializing our country."
+ interstatecomplete.a:0 "Great! Let's create factories!"

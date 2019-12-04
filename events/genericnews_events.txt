@@ -75,3 +75,107 @@ news_event = {
     }
   }
 }
+
+# Battle of Pennsylvania Avenue - Fascist D.C.
+
+news_event = {
+  id = genericfocusnews.3
+  title = genericfocusnews.3.t
+  desc = genericfocusnews.3.d
+  picture = GFX_news_event_whitehouse2
+  is_triggered_only = yes
+
+  major = yes
+
+  option = {
+    name = genericfocusnews.3.a
+    trigger = {
+      TAG = WDC
+    }
+  }
+  option = {
+    name = genericfocusnews.3.b
+    trigger = {
+      NOT = {
+        TAG = WDC
+      }
+      AND = {
+        has_government = communism
+      }
+    }
+  }
+  option = {
+    name = genericfocusnews.3.c
+    trigger = {
+      NOT = {
+        TAG = WDC
+      }
+      AND = {
+        has_government = fascism
+      }
+    }
+  }
+  option = {
+    name = genericfocusnews.3.e
+    trigger = {
+      NOT = {
+        TAG = WDC
+      }
+      AND = {
+        has_government = democratic
+      }
+    }
+  }
+}
+
+# Storm Capitol Hill - D.C. Communism
+
+news_event = {
+  id = genericfocusnews.4
+  title = genericfocusnews.4.t
+  desc = genericfocusnews.4.d
+  picture = GFX_news_event_dccapitol
+  is_triggered_only = yes
+
+  major = yes
+
+  option = {
+    name = genericfocusnews.4.a
+    trigger = {
+      TAG = WDC
+    }
+  }
+  option = {
+    name = genericfocusnews.4.b
+    trigger = {
+      NOT = {
+        TAG = WDC
+      }
+      AND = {
+        has_government = communism
+      }
+    }
+  }
+  option = {
+    name = genericfocusnews.4.c
+    trigger = {
+      NOT = {
+        TAG = WDC
+      }
+      AND = {
+        has_government = fascism
+      }
+    }
+  }
+  option = {
+    name = genericfocusnews.4.e
+    trigger = {
+      NOT = {
+        TAG = WDC
+      }
+      AND = {
+        has_government = democratic
+      }
+    }
+  }
+}

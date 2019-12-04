@@ -1100,6 +1100,10 @@ SpriteType = {
   name = "GFX_UTU_steel_mines"
   texturefile = "gfx/interface/goals/UTU_steel_mines.dds"
 }
+SpriteType = {
+  name = "GFX_UTU_interstate"
+  texturefile = "gfx/interface/goals/UTU_interstate.dds"
+}
 
 ############################################################################################################################
 
