@@ -30,6 +30,16 @@
  UTU_greatdepression_desc:0 "The Great Depression has hit Utah very hard. However, our government has mostly fixed the damage that has been done, and we are on our way to a full recovery."
  UTU_mormonfundimental:0 "Mormon Fundimentalism"
 
+##### DECISIONS AND STUFF ######
+ UTU_factories:0 "Expand Our Industrial Capacity"
+ UTU_interstate:0 "Construct The Interstate"
+ UTU_factories_1:0 "Industrialize Eastern Utah"
+ UTU_interstate_1:0 "Build The Centerpoint"
+ UTU_interstate_2:0 "The St. George Stretch"
+ UTU_interstate_3:0 "Nevadan Border Crossings"
+ UTU_interstate_4:0 "Uintah Connections"
+ UTU_interstate_5:0 "The Finishing Touches"
+
 ###### FOCUS STUFF #####
  UTU_industry_start:0 "Kickstart Utahn Industry"
  UTU_industry_start_desc:0 "We must start our industry off strong, for a stable future."
@@ -145,3 +155,4 @@
  UTU_prepare_interstate:0 "Excavate For The Interstate"
  UTU_buy_resources:0 "Deals To Purchase Resources"
  UTU_begin_interstate:0 "Begin The Interstate"
+ UTU_finish_interstate_focus:0 "Completion of the Interstate"
