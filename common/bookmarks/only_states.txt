@@ -88,16 +88,15 @@ bookmarks = {
 			}
 		}
 
-		"NCN" = {
+		"MAM" = {
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				#
+				
 			}
 			focuses = {
-				NCN_FOCUS_17
-				ncking_and_country
-				NCN_FOCUS_11
+				MAM_TheBostonMeeting
+				MAM_establishthebostonminutemen
 			}
 		}
 
