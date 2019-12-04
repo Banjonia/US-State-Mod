@@ -8,10 +8,10 @@ bookmarks = {
 		default = yes
 
 		"TXT" = {
-			history = "USA_GATHERING_STORM_DESC"
+			history = "TXT_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-			home_of_the_free
+
 			}
 			focuses = {
 				TXT_lonestar
