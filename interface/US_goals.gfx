@@ -1104,6 +1104,15 @@ SpriteType = {
   name = "GFX_UTU_interstate"
   texturefile = "gfx/interface/goals/UTU_interstate.dds"
 }
+SpriteType = {
+  name = "GFX_UTU_interstate_plan"
+  texturefile = "gfx/interface/goals/UTU_interstate_plan.dds"
+}
+SpriteType = {
+  name = "GFX_UTU_economic_boom"
+  texturefile = "gfx/interface/goals/UTU_economic_boom.dds"
+}
+
 
 ############################################################################################################################
 

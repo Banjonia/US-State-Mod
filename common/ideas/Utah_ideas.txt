@@ -343,5 +343,26 @@ ideas = {
 				fascism_acceptance = 75
 			}
 		}
+#######################################################
+		UTU_economicboom = {
+      allowed = {
+          always = no
+      }
+
+      allowed_civil_war = {
+          always = yes
+      }
+
+      removal_cost = -1
+
+      picture = GFX_idea_UTU_economicboom
+
+      modifier = {
+        political_power_gain = 0.30
+        stability_factor = 0.10
+        consumer_goods_factor = -0.25
+				war_support_weekly = 0.002
+      }
+    }
   }
 }

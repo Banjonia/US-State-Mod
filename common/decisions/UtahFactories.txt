@@ -15,7 +15,7 @@ UTU_factories = {
 
     cost = 150
 
-    days_remove = 130
+    days_remove = 100
 
     fire_only_once = yes
 
@@ -23,7 +23,12 @@ UTU_factories = {
 			state = 841
 		}
 
+    modifier = {
+      consumer_goods_factor = 0.05
+    }
+
     complete_effect = {
+      set_country_flag = utahindustry1
       841 = {
         add_extra_state_shared_building_slots = 2
         add_building_construction = {
@@ -31,6 +36,181 @@ UTU_factories = {
           level = 2
           instant_build = yes
         }
+      }
+    }
+
+    ai_will_do = {
+      factor = 100
+    }
+  }
+  UTU_factories_2 = {
+
+    icon = decision_generic_industry
+
+    allowed = {
+
+    }
+
+    cancel_if_not_visible = yes
+
+    visible = {
+      has_completed_focus = UTU_industry_buildup_east
+    }
+
+    cost = 150
+
+    days_remove = 100
+
+    fire_only_once = yes
+
+    highlight_states = {
+			state = 380
+		}
+
+    modifier = {
+      consumer_goods_factor = 0.05
+    }
+
+    complete_effect = {
+      set_country_flag = utahindustry2
+      380 = {
+        add_extra_state_shared_building_slots = 2
+        add_building_construction = {
+          type = industrial_complex
+          level = 2
+          instant_build = yes
+        }
+      }
+    }
+
+    ai_will_do = {
+      factor = 100
+    }
+  }
+  UTU_factories_3 = {
+
+    icon = decision_generic_industry
+
+    allowed = {
+
+    }
+
+    cancel_if_not_visible = yes
+
+    visible = {
+      has_completed_focus = UTU_industry_buildup_east
+    }
+
+    cost = 150
+
+    days_remove = 120
+
+    fire_only_once = yes
+
+    highlight_states = {
+			state = 841
+		}
+
+    modifier = {
+      local_resources_factor = 0.2
+    }
+
+    modifier = {
+      consumer_goods_factor = 0.05
+    }
+
+    complete_effect = {
+      set_country_flag = utahindustry3
+      841 = {
+        add_extra_state_shared_building_slots = 2
+        add_building_construction = {
+          type = industrial_complex
+          level = 1
+          instant_build = yes
+        }
+      }
+    }
+
+    ai_will_do = {
+      factor = 100
+    }
+  }
+  UTU_factories_4 = {
+
+    icon = decision_generic_industry
+
+    allowed = {
+
+    }
+
+    cancel_if_not_visible = yes
+
+    visible = {
+      has_completed_focus = UTU_industry_buildup_east
+    }
+
+    cost = 150
+
+    days_remove = 100
+
+    fire_only_once = yes
+
+    modifier = {
+      consumer_goods_factor = 0.08
+    }
+
+    complete_effect = {
+      set_country_flag = utahindustry4
+      modify_building_resources = {
+        building = synthetic_refinery
+        resource = rubber
+        amount = 2
+      }
+    }
+
+    ai_will_do = {
+      factor = 100
+    }
+  }
+  UTU_factories_5 = {
+
+    icon = decision_generic_industry
+
+    available = {
+      has_country_flag = utahindustry1
+    }
+    available = {
+      has_country_flag = utahindustry2
+    }
+    available = {
+      has_country_flag = utahindustry3
+    }
+    available = {
+      has_country_flag = utahindustry4
+    }
+
+    cancel_if_not_visible = yes
+
+    visible = {
+      has_completed_focus = UTU_industry_buildup_east
+    }
+
+    cost = 150
+
+    days_remove = 100
+
+    fire_only_once = yes
+
+    modifier = {
+      consumer_goods_factor = 0.08
+    }
+
+    complete_effect = {
+      set_country_flag = utahindustrydone
+      modify_building_resources = {
+        building = synthetic_refinery
+        resource = rubber
+        amount = 2
       }
     }
 

@@ -111,8 +111,13 @@ focus_tree = {
 		prerequisite = {
       focus = UTU_chromium_mines
     }
+		prerequisite = {
+      focus = UTU_industry_decisions_finished
+			focus = UTU_finish_interstate_focus
+    }
 
 		completion_reward {
+			remove_ideas = UTU_lessgreatdepression
 			840 = {
 				add_extra_state_shared_building_slots = 1
 				add_resource = {
@@ -120,6 +125,29 @@ focus_tree = {
 					amount = 20
 				}
 			}
+		}
+	}
+	focus = {
+		id = UTU_economy_boom
+		icon = GFX_UTU_economic_boom
+		x = 30
+		y = 7
+		cost = 10
+
+		available_if_capitulated = yes
+
+		prerequisite = {
+      focus = UTU_steel_mines
+    }
+		prerequisite = {
+      focus = UTU_finish_interstate_focus
+    }
+		prerequisite = {
+      focus = UTU_industry_decisions_finished
+    }
+
+		completion_reward {
+			add_ideas = UTU_economicboom
 		}
 	}
 
@@ -216,6 +244,28 @@ focus_tree = {
 			unlock_decision_category_tooltip = UTU_factories
 		}
 	}
+	focus = {
+		id = UTU_industry_decisions_finished
+		icon = GFX_Generic_Industrialization
+		x = 29
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = {
+			has_country_flag = utahindustrydone
+		}
+		prerequisite = {
+      focus = UTU_industry_buildup_east
+    }
+
+		completion_reward {
+			country_event = {
+				id = utah.9
+			}
+		}
+	}
 ############################# infrastructure lol ########
 	focus = {
 		id = UTU_build_roads_southwest
@@ -296,7 +346,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UTU_begin_interstate
-		icon = GFX_Generic_Factionalism
+		icon = GFX_UTU_interstate_plan
 		x = 32
 		y = 4
 		cost = 10

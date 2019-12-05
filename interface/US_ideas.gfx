@@ -377,6 +377,10 @@ spriteTypes = {
 		name = "GFX_idea_democratdonkey"
 		texturefile = "gfx/interface/ideas/democratdonkey.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_UTU_economicboom"
+		texturefile = "gfx/interface/ideas/UTU_economicboom.dds"
+	}
 
 
 
