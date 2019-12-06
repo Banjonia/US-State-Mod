@@ -41,7 +41,7 @@ no_cavalry = {
 	ai_strategy = {
 		type = role_ratio
 		id = cavalry
-		value = -100 
+		value = 1 
 	}
 }
 
@@ -57,13 +57,13 @@ mobile_warfare_ratios = {
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = 30
+		value = 10
 	}
 	
 	ai_strategy = {
 		type = role_ratio
 		id = motorized
-		value = 10
+		value = 2
 	}
 }
 

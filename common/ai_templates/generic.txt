@@ -425,7 +425,7 @@ garrison_generic = {
 		custom_icon = 7
 	
 		upgrade_prio = {
-			factor = 2
+			factor = 10
 
 			modifier = {
 				factor = 1
@@ -438,7 +438,7 @@ garrison_generic = {
 		
 		stat_weights = {
 			0.00 #-- default_morale
-			0.00 #-- defense
+			3.00 #-- defense
 			0.00 #-- breakthrough
 			0.00 #-- hardness
 			4.00 #-- soft_attack
@@ -544,7 +544,7 @@ suppression_generic = {
 		
 		stat_weights = {
 			0.00 #-- default_morale
-			0.00 #-- defense
+			5.00 #-- defense
 			0.00 #-- breakthrough
 			0.00 #-- hardness
 			4.00 #-- soft_attack
@@ -625,7 +625,7 @@ infantry_generic = {
 	}
 	
 	upgrade_prio = {
-		factor = 2
+		factor = 20
 
 		modifier = {
 			factor = 5
@@ -637,7 +637,7 @@ infantry_generic = {
 	infantry_default = {
 	
 		upgrade_prio = {
-			factor = 10
+			factor = 20
 
 			modifier = {
 				factor = 1
@@ -650,13 +650,13 @@ infantry_generic = {
 		
 		stat_weights = {
 			0.00 #-- default_morale
-			0.00 #-- defense
-			1.00 #-- breakthrough
+			10.00 #-- defense
+			10.00 #-- breakthrough
 			0.00 #-- hardness
-			4.00 #-- soft_attack
+			10.00 #-- soft_attack
 			0.00 #-- hard_attack
-			0.00 #-- recon
-			1.00 #-- entrenchment
+			10.00 #-- recon
+			10.00 #-- entrenchment
 			0.00 #-- initiative
 			0.00 #-- casualty_trickleback
 			0.00 #-- supply_consumption_factor
@@ -743,13 +743,12 @@ infantry_big_generic = {
 	}
 	
 	upgrade_prio = {
-		factor = 20
+		factor = 40
 
 		modifier = {
 			factor = 0
 
 			OR = {
-				date < 1938.1.1
 				stockpile_ratio = { 
 	  				archetype = infantry_equipment
 	  				ratio < 4
@@ -769,7 +768,6 @@ infantry_big_generic = {
 				factor = 0
 
 				OR = {
-					date < 1938.1.1
 					stockpile_ratio = { 
 		  				archetype = infantry_equipment
 		  				ratio < 4
@@ -784,13 +782,13 @@ infantry_big_generic = {
 		
 		stat_weights = {
 			0.00 #-- default_morale
-			0.00 #-- defense
-			1.00 #-- breakthrough
+			10.00 #-- defense
+			10.00 #-- breakthrough
 			0.00 #-- hardness
-			4.00 #-- soft_attack
+			14.00 #-- soft_attack
 			0.00 #-- hard_attack
 			0.00 #-- recon
-			1.00 #-- entrenchment
+			10.00 #-- entrenchment
 			0.00 #-- initiative
 			0.00 #-- casualty_trickleback
 			0.00 #-- supply_consumption_factor
@@ -872,7 +870,7 @@ mountaineers_generic = {
 		factor = 2
 
 		modifier = {
-			factor = 0
+			factor = 15
 			NOT = {
 				has_tech = tech_mountaineers
 			}
@@ -891,18 +889,18 @@ mountaineers_generic = {
 			}
 		}
 	
-		target_width = 20.0
+		target_width = 30.0
 		width_weight = 2.0
 		column_swap_factor = 0.2
 		
 		stat_weights = {
 			0 #-- default_morale
-			1 #-- defense
-			1 #-- breakthrough
+			10 #-- defense
+			10 #-- breakthrough
 			0 #-- hardness
 			2 #-- soft_attack
 			0 #-- hard_attack
-			0 #-- recon
+			10 #-- recon
 			0 #-- entrenchment
 			0 #-- initiative
 			0 #-- casualty_trickleback
@@ -978,7 +976,7 @@ marines_generic = {
 	}
 	
 	upgrade_prio = {
-		factor = 2
+		factor = 12
 
 		modifier = {
 			factor = 0
@@ -993,14 +991,14 @@ marines_generic = {
 	marine_default = {
 	
 		upgrade_prio = {
-			factor = 2
+			factor = 20
 
 			modifier = {
 				factor = 1
 			}
 		}
 	
-		target_width = 18.0
+		target_width = 20.0
 		width_weight = 1.0
 		column_swap_factor = 0.1
 		
@@ -1009,7 +1007,7 @@ marines_generic = {
 			0.00 #-- defense
 			1.00 #-- breakthrough
 			0.05 #-- hardness
-			3.00 #-- soft_attack
+			30.00 #-- soft_attack
 			0.01 #-- hard_attack
 			0.00 #-- recon
 			2.20 #-- entrenchment
@@ -1087,8 +1085,8 @@ marines_generic = {
 		
 		stat_weights = {
 			0.00 #-- default_morale
-			0.00 #-- defense
-			1.00 #-- breakthrough
+			10.00 #-- defense
+			15.00 #-- breakthrough
 			0.05 #-- hardness
 			3.00 #-- soft_attack
 			0.01 #-- hard_attack
@@ -1190,14 +1188,14 @@ paratrooper_generic = {
 			}
 		}
 		
-		target_width = 18.0
+		target_width = 20.0
 		width_weight = 3.0
 		column_swap_factor = 0.1
 		
 		stat_weights = {
 			0.20 #-- default_morale
-			1.00 #-- defense
-			0.20 #-- breakthrough
+			10.00 #-- defense
+			10.20 #-- breakthrough
 			0.00 #-- hardness
 			2.00 #-- soft_attack
 			0.10 #-- hard_attack

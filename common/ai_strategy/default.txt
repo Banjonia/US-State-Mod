@@ -63,7 +63,7 @@ default_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = 10
+		value = 5
 	}
 	
 	#Air unit factors
@@ -367,19 +367,19 @@ default_garrison_production = {
 		ai_wants_divisions >  12
 	}
 	abort = {
-		ai_wants_divisions < 25
+		ai_wants_divisions < 15
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = garrison
-		value = 25
+		value = 2
 	}
 	
 	ai_strategy = {
 		type = role_ratio
 		id = suppression
-		value = 10
+		value = 5
 	}
 }
 
