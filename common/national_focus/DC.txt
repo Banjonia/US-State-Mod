@@ -690,7 +690,8 @@ continuous_focus_position = { x = 50 y = 1000 }
     cost = 10
 
     completion_reward = {
-
+      custom_effect_tooltip = available_political_advisor
+      show_ideas_tooltip = USA_joseph_mccarthy
     }
   }
 

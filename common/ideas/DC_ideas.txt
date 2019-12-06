@@ -339,3 +339,27 @@ ideas = {
 				generate_wargoal_tension = -0.25
 			}
 		}
+	}
+#################################### ADVISORS #######################################
+
+	political_advisor = {
+		joseph_mccarthy = {
+			picture = USA_joseph_mccarthy
+
+			allowed = {
+				original_tag = WDC
+			}
+
+			available = {
+				has_completed_focus = DC_fascist6
+			}
+			traits = {
+				anti_communist_crusader
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}
