@@ -878,19 +878,70 @@ focus_tree = {
 		}
 	}
 ######################################
-#### start of Utah millitary path ####
+#### start of Utah military path ####
 ######################################
 	focus = {
-		id = UTU_millitary_buildup_start
-		icon = GFX_Generic_Break_Free
+		id = UTU_military_path
+		icon = GFX_Generic_Purchase_Tanks_Focus
 		x = -25
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward {
-			modifier = {
-				supply_consumption_factor = .1
+			add_command_power = 30
+		}
+	}
+	focus = {
+		id = UTU_raid_federal_bases
+		icon = GFX_Generic_German_Soldiers2
+		x = -27
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UTU_military_path
+		}
+		completion_reward {
+			add_ideas = UTU_federaldocuments
+			add_tech_bonus = {
+				name = nuclear_bonus
+				bonus = 2.0
+				uses = 1
+				category = nuclear
 			}
+			add_tech_bonus = {
+				name = rocketry_bonus
+				bonus = 1.0
+				uses = 2
+				category = rocketry
+			}
+		}
+	}
+	focus = {
+		id = UTU_strike_deal_california
+		icon = GFX_Generic_Artillery_Barrel
+		x = -25
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UTU_military_path
+		}
+		completion_reward {
+		}
+	}
+	focus = {
+		id = UTU_byu_air_school
+		icon = GFX_Generic_Jet_Fighters
+		x = -23
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UTU_military_path
+		}
+		completion_reward {
+			add_ideas = UTU_byupilots
 		}
 	}
 	##################################################################################
@@ -1280,10 +1331,7 @@ focus_tree = {
         	focus = UTU_church_owns_farms
         }
 		completion_reward {
-			add_popularity = {
-    			ideology = theocratism
-    			popularity = 0.02
-    		}
+			add_stability = -0.1
 		}
 	}
 	focus = {
@@ -1307,13 +1355,38 @@ focus_tree = {
 		cost = 10
 		mutually_exclusive = {
         focus = UTU_investigate_mormons
+				focus = UTU_theodemocracy_coup
     }
+		available = {
+			fascism > 0.08
+		}
 		prerequisite = {
       focus = UTU_enforce_church_teachings
     }
-		custom_effect_tooltip = 1_UTU_tt
 		completion_reward {
     	add_ideas = UTU_mormonfundimental
+		}
+	}
+	focus = {
+		id = UTU_theodemocracy_coup
+		icon = GFX_Generic_Christianity
+		x = 11
+		y = 5
+		cost = 10
+		mutually_exclusive = {
+        focus = UTU_fascist_mormons
+    }
+		available = {
+			theocratism > 0.4
+		}
+		prerequisite = {
+      focus = UTU_enforce_church_teachings
+    }
+		completion_reward {
+			set_politics = {
+				ruling_party = theocratism
+				elections_allowed = no
+			}
 		}
 	}
 }

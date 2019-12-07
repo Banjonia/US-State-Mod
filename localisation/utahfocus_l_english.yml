@@ -31,6 +31,8 @@
  UTU_mormonfundimental:0 "Mormon Fundimentalism"
  UTU_economicboom:0 "Economic Boom"
  UTU_economicboom_desc:0 "The economy of Utah has not only improved, it has boomed! Thanks to all of the projects the government has completed and the jobs it has created, the quality of living has skyrocketed and Utah's future looks incredibly bright."
+ UTU_federaldocuments:0 "Classified Federal Documents"
+ UTU_byupilots:0 "BYU Pilot Recruitment"
 
 ##### DECISIONS AND STUFF ######
  UTU_factories:0 "Expand Our Industrial Capacity"
@@ -165,3 +167,9 @@
  UTU_finish_interstate_focus:0 "Completion of the Interstate"
  UTU_industry_decisions_finished:0 "Finish The Plan"
  UTU_economy_boom:0 "Economic Boom"
+ UTU_military_path:0 "Utah's Military Might"
+ UTU_raid_federal_bases:0 "Raid Federal Military Bases"
+ UTU_strike_deal_california:0 "Strike An Arms Deal With California"
+ UTU_byu_air_school:0 "BYU Pilot Recruitment"
+ UTU_fascist_mormons:0 "Mormon Fundimentalism"
+ UTU_theodemocracy_coup:0 "Theodemocrats Take Power"

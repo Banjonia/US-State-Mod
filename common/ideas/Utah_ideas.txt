@@ -19,6 +19,7 @@ ideas = {
         political_power_gain = -0.10
         add_stability = 0.1
         justify_war_goal_time = 1
+				theocratism_drift = 0.02
       }
     }
 #####################################################
@@ -80,8 +81,8 @@ ideas = {
       picture = GFX_idea_UTU_turntochurch
 
       modifier = {
-        fascism_drift = 0.01
-        theocratism_drift = 0.05
+        fascism_drift = 0.04
+        theocratism_drift = 0.1
       }
     }
 ##################################################
@@ -118,7 +119,7 @@ ideas = {
       picture = GFX_idea_UTU_churchschool
 
       modifier = {
-        theocratism_drift = 0.03
+        theocratism_drift = 0.08
         industrial_capacity_factory = 0.05
         research_speed_factor = 0.1
       }
@@ -362,6 +363,43 @@ ideas = {
         stability_factor = 0.10
         consumer_goods_factor = -0.25
 				war_support_weekly = 0.002
+      }
+    }
+######################################################
+		UTU_federaldocuments = {
+      allowed = {
+          always = no
+      }
+
+      allowed_civil_war = {
+          always = yes
+      }
+
+      removal_cost = -1
+
+      picture = GFX_idea_hol_the_foundations_of_defense
+
+      modifier = {
+        production_speed_bunker_factor = 0.1
+      }
+    }
+########################################################
+		UTU_byupilots = {
+      allowed = {
+          always = no
+      }
+
+      allowed_civil_war = {
+          always = yes
+      }
+
+      removal_cost = -1
+
+      picture = GFX_idea_hol_the_foundations_of_defense
+
+      modifier = {
+      	production_speed_air_base_factor = 0.05
+				conscription = 0.020
       }
     }
   }

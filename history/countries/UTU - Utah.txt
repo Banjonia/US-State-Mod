@@ -169,6 +169,17 @@ create_country_leader = {
 	expire = "1941.1.1"
 	ideology = liberalism
 	traits = {
+		cornered_fox
+	}
+}
+create_country_leader = {
+	name = "Heber J. Grant"
+	desc = "POLITICS_HEBER_J_GRANT_DESC"
+	picture = "Portrait_UTU_Heber_J_Grant.dds"
+	expire = "1964.1.1"
+	ideology = theocratic
+	traits = {
+		dictator
 	}
 }
 ### Ship Variants ###
