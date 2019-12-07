@@ -1279,12 +1279,9 @@ focus_tree = {
 		icon = GFX_focus_generic_military_academy
 		cost = 10.00
 		prerequisite = {
-			focus = TXT_nationalism
-		}
-		prerequisite = {
 			focus = TXT_increaseconscripts
 		}
-		x = 21
+		x = 20
 		y = 10
 		completion_reward = {
 			add_ideas = military_academies

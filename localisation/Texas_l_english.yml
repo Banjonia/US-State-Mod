@@ -57,8 +57,8 @@
  texasnews.1.t:0 "The Republic of Texas Reaches Out!"
  texasnews.1.d:0 "James Allred has made a public statement calling out to all of the democratic countries that are willing to listen. James has stated that with the rising tension in the world, The Republic of Texas is planning to create a democratic coalition. If the coalition is sucessful, it could prove troublesome for aggressive ideologies. The hope of the coalition is to stop the spread of empires and keep their aggression in check. If they are sucessful, the coalition could mean the end of empires in North America all together. Whatever the outcome, let's hope it's good."
  texasnews.1.a:0 "We'll see how this develops."
- texasnews.2.t:0 "The Republic of Texas Denounces the New California Republic!"
- texasnews.2.d:0 "In a speech held by James Allred, he has denounced Californian ideals. He believes that they're not following true to democracy and they should reduce their aggression. Whether he will take action against California and her people is yet to be seen. The Californian high command has yet to respond publicly, but if relations sour, it could lead to horrible outcomes. We can only hope to restore stability and peace in the Americas. In time, we will see."
+ texasnews.2.t:0 "The Republic of Texas Denounces the [CAC.GetName]!"
+ texasnews.2.d:0 "In a speech held by James Allred, he has denounced Californian ideals. He believes that they're not following true to preserving peace and they should reduce their aggression. Whether he will take action against California and her people is yet to be seen. The Californian high command has yet to respond publicly, but if relations sour, it could lead to horrible outcomes. We can only hope to restore stability and peace in the Americas. In time, we will see."
  texasnews.2.a:0 "And so it begins..."
 #Tooltips
  TXT_generalsupport:0 "§GGain the support of generals.§!  Will give your government more influence."
@@ -157,6 +157,14 @@
  TXT_military_youth_desc:0 "The students are our future and what better way to invest in them than establishing military schools. They could be prepared for the front with preemtive training in weapon usage and tactics. With the new schools, students could be increasingly taught about predecessors mistakes, and build on them. The students hold our future."
  TXT_prepare_for_the_worst:0 "Prepare for the Worst"
  TXT_prepare_for_the_worst_desc:0 "The political climate in North America is shifting, becoming more dangerous. We've seen these situations in Europe many times before. High tensions and disagreements create a landscape ready for lines to be drawn and alliances chosen. The worst wars in North America are on the horizon and it will shake the continent like never before."
+ TXT_defense_of_austin:0 "The Defense of Austin"
+ TXT_defense_of_austin_desc:0 "While Austin is not our largest city, it is still our capital. If we lose the capital, the government would not have the support of the people. Without the pride of the people, we would not be able to sustain the war. The capital may not be the largest city, but it still holds our military might. Such are the problems with the government being held by the people."
+ TXT_defense_of_SA:0 "The Defense of San Antonio"
+ TXT_defense_of_SA_desc:0 "San Antonio is the scene of our greatest military defeat. Although it did rally the Texans to surely gain their independence, the loss of our troops was truly unacceptable. Even with modernized fortress systems, we can never be too cautious. Modern times may be different from a war of independence. What caused rallying cries in the past coul be the downfall of our nation."
+ TXT_defense_of_dfw:0 "The Defense of Dallas-Fort Worth"
+ TXT_defense_of_dfw_desc:0 "Dallas, one of the largest cities within our nation must be safeguarded to the last man. Fort Worth, long decomissioned, must be restored and modernized. The Northeastern region of Texas holds a large amount of people in it, and if it gets lost to an enemy, there may not be enough men to support our cause."
+ TXT_increase_mil_products:0 "Increase Military Products"
+ TXT_increase_mil_products_desc:0 "To prepare for the coming struggle, we need a strong military. Large militaries cannot be sustained on morale alone. While we have the population for the large army, we do not have the equipment. We can subsidize factories that will create the equipment needed to launch our army above all others in America and become a power of the continent."
 
 ####TO BE ORGANIZED
 TXT_forgeourownpath:0 "Forge Our Own Path"
