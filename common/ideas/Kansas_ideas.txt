@@ -475,7 +475,7 @@ ideas = {
 				send_volunteers_tension = -0.3
 			}
 		}
-		KSK_agricultural_reform = {
+		KSK_dust_bowl = {
 
 			allowed = {
 				always = no
@@ -488,8 +488,45 @@ ideas = {
 			picture = generic_agrarian_society
 
 			modifier = {
-				consumer_goods_factor = -0.05
-				monthly_population = 0.10
+				monthly_population = -0.25
+				army_org_factor = -0.10
+				army_morale_factor = -0.15
+			}
+		}
+
+		KSK_agriculturec = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = ENG_for_the_good_of_the_revolution
+
+			modifier = {
+				monthly_population = 0.30
+				trade_opinion_factor = 0.25
+				industrial_capacity_factory = -0.10
+				trade_laws_cost_factor = -0.20
+
+			}
+		}
+
+		KSK_agriculturef = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = RAJ_risk_of_famine
+
+			modifier = {
+				monthly_population = -0.25
 			}
 		}
   }

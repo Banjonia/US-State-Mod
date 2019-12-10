@@ -339,6 +339,51 @@ ideas = {
 				generate_wargoal_tension = -0.25
 			}
 		}
+
+		DC_COINTELPRO = {
+			picture = generic_secret_police
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				encryption_factor = 0.10
+				decryption_factor = 0.10
+			}
+		}
+
+		DC_warpowers = {
+			picture = generic_constitutional_guarantee
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				justify_war_goal_time = -0.25
+				offensive_war_stability_factor = 0.20
+			}
+		}
+
+		DC_recruitment = {
+			picture = mex_politicised_army
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.10
+				training_time_army_factor = 0.10
+			}
+		}
 	}
 #################################### ADVISORS #######################################
 
