@@ -18,13 +18,19 @@ state={
 		}
 		add_core_of = NMN
 		victory_points = {
-			12720 20 
+			12720 15
 		}
 		victory_points = {
 			3883 15
 		}
 		victory_points = {
-			12791 1 
+			12791 30
+		}
+		victory_points = {
+			100867 10
+		}
+		victory_points = {
+			3867 5 
 		}
 	}
 

@@ -16,9 +16,11 @@ state={
 		}
 		add_core_of = NMN
 		victory_points = {
-			4975 1 
+			12552 50
 		}
-
+		victory_points = {
+			13248 10 
+		}
 	}
 
 	provinces={
