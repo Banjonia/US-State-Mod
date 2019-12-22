@@ -20,10 +20,10 @@ state={
 		}
 		add_core_of = NMN
 		victory_points = {
-			4975 15
+			4975 30
 		}
 		victory_points = {
-			10642 30
+			10642 5
 		}
 	}
 
