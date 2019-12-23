@@ -1,0 +1,88 @@
+add_namespace = mam
+
+#TheBostonMeeting
+country_event = {
+  id = mam.1
+  title = mam.1.t
+  desc = mam.1.d
+  picture = gfx
+  is_triggered_only = yes
+
+  option = {#Use The Meeting to kill the opposition
+    name = mam.1.a
+    add_country_leader_trait = cruel
+    add_political_power = -100
+    custom_effect_tooltip = leader_cruel_tt
+    hidden_effect = {
+    set_country_flag = leader_curleycruel
+    country_event = { id = mam.5 }
+  }
+  }
+  option = {#Curley Compromise with the opposition
+    name = mam.1.b
+    add_popularity = { ideology = democratic popularity = 0.15}
+    add_stability = 0.05
+      hidden_effect = {
+      set_country_flag = fairelectionflag
+    }
+  }
+  option = {#TalkAboutANewPath
+    name = mam.1.c
+    add_popularity = { ideology = fascism popularity = 0.25 }
+    add_popularity = { ideology = communism popularity = 0.25}
+    add_stability = -0.20
+    hidden_effect = {
+      set_country_flag = fairelectionflag
+    }
+  }
+}
+#Curley Assassination Election Event
+country_event = {
+  id = mam.2
+  title = mam.2.t
+  desc = mam.2.d
+  picture = gfx
+  is_triggered_only = yes
+
+  option = {#Nobody to beat for Curley
+    name = mam.2.a 
+    add_stability = 0.10
+    set_country_flag = curley_victory
+  }
+}
+#Normal Election
+country_event = {
+  id = mam.3
+  title = mam.3.t
+  desc = mam.3.d
+  picture = gfx
+  is_triggered_only = yes
+
+  option = {#Curley Wins
+    name = mam.3.a 
+    add_stability = 0.10
+    set_country_flag = curley_victory
+  }
+    option = {#Leverett Saltonstall wins
+    name = mam.3.b
+    add_stability = 0.05
+    set_country_flag = saltonstall_victory
+  }
+    option = {#Charles F Hurley
+    name = mam.3.c
+    add_stability = 0.05
+    set_country_flag = charles_victory
+  }
+}
+#Curley After Boston Assassination
+country_event = {
+  id = mam.5
+  title = mam.5.t
+  desc = mam.5.d
+  picture = gfx
+  is_triggered_only = yes
+
+  option = {#Nobody to beat for Curley
+    name = mam.5.a 
+  }
+}

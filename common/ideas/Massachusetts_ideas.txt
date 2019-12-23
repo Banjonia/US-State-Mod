@@ -1,0 +1,74 @@
+ideas = {
+    #country
+    country = {
+ 		MAM_TheMinuteMen = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				partisan_effect = 0.20
+                recon_factor = 0.10
+                army_core_attack_factor = 0.1
+                army_core_defence_factor = 0.15
+			}
+    }
+ 		MAM_RecruitVolunteers = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+                conscription = 0.02
+			}
+    }  
+     		MAM_PublicSchools = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+                research_speed_factor = 0.05
+			}
+    }
+     		MAM_CitizenShipByServiceIdea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+                conscription = 0.015
+                MONTHLY_POPULATION = 0.10
+			}
+    }                 
+}
+
+}

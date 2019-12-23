@@ -1,0 +1,499 @@
+#Massachusetts Focus Tree by Lifey
+#All suggestions should be sent to Lifey#0001 on Discord.
+#Do not edit.
+
+focus_tree = {
+	id = massachusetts_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 30
+			tag = MAM
+		}
+	}
+	continuous_focus_position = { x = 0 y = 1 }
+	default = no
+
+focus = {
+	id = MAM_TheBostonMeeting
+	icon = GFX_Generic_Meeting
+	cost = 5.8
+	x = 13
+	y = 0
+	completion_reward = {
+		add_political_power = 15
+		country_event = { id = mam.1 }
+	}
+}
+focus = {
+	id = MAM_ElectionWeek
+	icon = GFX_Generic_Elections
+	cost = 7.2
+	x = 13
+	y = 1
+	prerequisite = {
+		focus = MAM_TheBostonMeeting
+	}
+	completion_reward= {
+		add_stability = 0.05
+	}
+}
+focus = {
+	id = MAM_TheEmergencyElection
+	icon = GFX_Generic_Democracy
+	cost = 2.2
+	x = 13
+	y = 2
+	prerequisite = {
+		focus = MAM_ElectionWeek
+	}
+	completion_reward = {
+	custom_effect_tooltip = electionweektt
+	hidden_effect = {
+		if = {
+			limit = {
+				has_country_flag = leader_curleycruel
+				}
+			country_event = { id = mam.2 }
+		}
+		if = {
+			limit = {
+				has_country_flag = fairelectionflag
+				}
+				country_event = { id = mam.3 }
+			}
+	}
+	}
+}
+focus = {
+	id = MAM_CurleyVictory
+	icon = GFX_Generic_Democracy
+	cost = 2.2
+	x = 25
+	y = 3
+	prerequisite = {
+		focus = MAM_TheEmergencyElection
+	}
+	available = {
+		has_country_flag = curley_victory
+	}
+	completion_reward = {
+		add_stability = 0.10
+		add_political_power = 50
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.10
+			}
+	}
+}
+focus = {
+	id = MAM_LeverettSaltonStallVictory
+	icon = GFX_Generic_Democracy
+	cost = 2.2
+	x = 10
+	y = 3
+	prerequisite = {
+		focus = MAM_TheEmergencyElection
+	}
+	available = {
+		has_country_flag = saltonstall_victory
+	}
+	completion_reward = {
+	add_popularity = {
+		ideology = fascism
+		popularity = 0.10
+		}
+	}
+}
+focus = {
+	id = MAM_CharlesHurleyVictory
+	icon = GFX_Generic_Democracy
+	cost = 2.2
+	x = 3
+	y = 3
+	prerequisite = {
+		focus = MAM_TheEmergencyElection
+	}
+	available = {
+		has_country_flag = charles_victory
+	}
+	completion_reward = {
+	add_popularity = {
+		ideology = communism
+		popularity = 0.10
+		}
+	}
+}
+focus = {
+	id = MAM_CurleyVictorySpeech
+	icon = GFX_Generic_Radio_Broadcast
+	cost = 7.2
+	x = 25
+	y = 4
+	prerequisite = {
+		focus = MAM_CurleyVictory
+	}
+	completion_reward = {
+		country_event = mam.4
+	}
+}
+focus = {
+	id = MAM_deploythenationalguard
+	icon = GFX_Generic_Coalition_Army
+	cost = 10
+	x = 22
+	y = 5
+	prerequisite = {
+		focus = MAM_CurleyVictorySpeech
+	}
+	available = {
+		threat > 0.05
+	}
+	completion_reward = {
+		custom_effect_tooltip = nationalguarddeploymentt
+		army_experience = 20
+		hidden_effect = {
+			load_oob = MAM_NationalGuardDeployment
+		}
+	}
+}
+focus = {
+	id = MAM_establishthebostonminutemen
+	icon = GFX_Generic_Coalition_Army
+	cost = 10
+	x = 21
+	y = 6
+	prerequisite = {
+		focus = MAM_deploythenationalguard
+	}
+	completion_reward = {
+		add_ideas = MAM_TheMinuteMen
+	}
+}
+focus = {
+	id = MAM_recruit_volunteers
+	icon = GFX_Generic_Army_Focus_Red02
+	cost = 10
+	x = 23
+	y = 6
+	prerequisite = {
+		focus = MAM_deploythenationalguard
+	}
+	completion_reward = {
+		add_ideas = MAM_RecruitVolunteers
+	}
+}
+focus = {
+	id = MAM_SubsidizeSpringfieldArmory
+	icon = GFX_Generic_Machine_Gun
+	cost = 10
+	x = 22
+	y = 7
+	prerequisite = {
+		focus = MAM_establishthebostonminutemen
+	}
+	prerequisite = {
+		focus = MAM_recruit_volunteers
+	}
+	completion_reward = {
+		995 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+				}
+		}		
+	}
+}
+focus = {
+	id = MAM_ProfessionalArmyTraining
+	icon = GFX_Generic_Machine_Gun02
+	cost = 7.2
+	x = 19
+	y = 7
+	prerequisite = {
+		focus = MAM_establishthebostonminutemen
+	}
+	prerequisite = {
+		focus = MAM_recruit_volunteers
+	}
+	completion_reward = {
+		army_experience = 30
+		air_experience = 30
+		navy_exeprience = 30
+	}
+}
+focus = {
+	id = MAM_SecureOurSouth
+	icon = GFX_Generic_Draw_Up_Plans
+	cost = 7.2
+	x = 18
+	y = 8
+	prerequisite = {
+		focus = MAM_ProfessionalArmyTraining
+	}
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = RIR
+			}		
+	}
+}
+focus = {
+	id = MAM_SecureOurSouth2
+	icon = GFX_Generic_Draw_Up_Plans
+	cost = 7.2
+	x = 20
+	y = 8
+	prerequisite = {
+		focus = MAM_ProfessionalArmyTraining
+	}
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = CTC
+			}		
+	}
+}
+focus = {
+	id = MAM_ActiveDefensesAgainstNewYork
+	icon = GFX_Generic_Barricade
+	cost = 10
+	x = 22
+	y = 8
+	prerequisite = {
+		focus = MAM_SubsidizeSpringfieldArmory
+	}
+	completion_reward = {
+		995 = {
+			add_building_construction = {
+				type = bunker
+				level = 3
+				instant_build = yes
+
+				province = {
+					all_provinces = yes	
+				}
+      		}
+		}		
+	}
+}
+focus = {
+	id = MAM_CurleysEconomicReforms
+	icon = GFX_Generic_Legislation
+	cost = 10
+	x = 26
+	y = 5
+	prerequisite = {
+		focus = MAM_CurleyVictorySpeech
+	}
+	available = {
+		has_political_power = 50
+	}
+	completion_reward = {
+		889 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+				}
+		}
+		add_political_power = -50		
+	}
+}
+focus = {
+	id = MAM_CreateTheMBTA
+	icon = GFX_Generic_Railroads
+	cost = 10
+	x = 29
+	y = 6
+	prerequisite = {
+		focus = MAM_CurleysEconomicReforms
+	}
+	completion_reward = {
+		889 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+				}
+		}
+	}
+}
+focus = {
+	id = MAM_FarmEconomicRelief
+	icon = GFX_Generic_Veggies
+	cost = 10
+	x = 27
+	y = 6
+	prerequisite = {
+		focus = MAM_CurleysEconomicReforms
+	}
+	completion_reward = {
+		987 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+		}	
+	}
+}
+focus = {
+	id = MAM_MilitaryProductionJobs
+	icon = GFX_Generic_Industry_Tanks
+	cost = 10
+	x = 25
+	y = 6
+	prerequisite = {
+		focus = MAM_CurleysEconomicReforms
+	}
+	completion_reward = {
+		986 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				}
+		}
+	}
+}
+focus = {
+	id = MAM_CitizenshipByService
+	icon = GFX_Generic_German_Soldiers2
+	cost = 10
+	x = 24
+	y = 7
+	prerequisite = {
+		focus = MAM_MilitaryProductionJobs
+	}
+	prerequisite = {
+		focus = MAM_recruit_volunteers
+	}
+	completion_reward = {
+		add_ideas = MAM_CitizenShipByServiceIdea
+	}
+}
+focus = {
+	id = MAM_BostonIndustry
+	icon = GFX_Generic_Factory_Complex
+	cost = 10
+	x = 26
+	y = 7
+	prerequisite = {
+		focus = MAM_MilitaryProductionJobs
+	}
+	prerequisite = {
+		focus = MAM_FarmEconomicRelief
+	}
+	completion_reward = {
+			889 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+				}
+		}	
+	}
+}
+focus = {
+	id = MAM_PrepareForConflict
+	icon = GFX_Generic_Draw_Up_Plans
+	cost = 10
+	x = 26
+	y = 8
+	prerequisite = {
+		focus = MAM_BostonIndustry
+	}
+	completion_reward = {
+		995 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				}
+		}
+		986 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				}
+		}
+		889 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				}
+		}						
+	}
+}
+focus = {
+	id = MAM_PublicSchoolReform
+	icon = GFX_Generic_Family
+	cost = 10
+	x = 28
+	y = 7
+	prerequisite = {
+		focus = MAM_CurleysEconomicReforms
+	}
+	prerequisite = {
+		focus = MAM_FarmEconomicRelief
+	}
+	completion_reward = {
+		add_ideas = MAM_PublicSchools	
+	}
+}
+focus = {
+	id = MAM_DreamsOfSomethingGreater
+	icon = GFX_Generic_Blue_Democracy
+	cost = 10
+	x = 24
+	y = 9
+	prerequisite = {
+		focus = MAM_ActiveDefensesAgainstNewYork
+	}
+	prerequisite = {
+		focus = MAM_CitizenshipByService
+	}
+	prerequisite = {
+		focus = MAM_PrepareForConflict
+	}
+	prerequisite = {
+		focus = MAM_SecureOurSouth
+	}
+	prerequisite = {
+		focus = MAM_SecureOurSouth2
+	}		
+	completion_reward = {
+		custom_effect_tooltip = dreamsofsomethinggreatertt
+		add_political_power = 50
+		add_war_support = 0.05
+	}
+}
+focus = {
+	id = MAM_PlansForaUnitedNewEngland
+	icon = GFX_Generic_Democracy
+	cost = 7.2
+	x = 14
+	y = 4
+	prerequisite = {
+		focus = MAM_CurleyVictory
+	}
+	available = {
+		has_completed_focus = MAM_DreamsOfSomethingGreater
+	}
+}
+
+
+}
