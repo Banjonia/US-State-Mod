@@ -203,7 +203,7 @@ focus = {
 				level = 3
 				instant_build = yes
 				}
-		}		
+		}
 	}
 }
 focus = {
@@ -237,7 +237,7 @@ focus = {
 		create_wargoal = {
 			type = annex_everything
 			target = RIR
-			}		
+			}
 	}
 }
 focus = {
@@ -253,7 +253,7 @@ focus = {
 		create_wargoal = {
 			type = annex_everything
 			target = CTC
-			}		
+			}
 	}
 }
 focus = {
@@ -273,10 +273,10 @@ focus = {
 				instant_build = yes
 
 				province = {
-					all_provinces = yes	
+					all_provinces = yes
 				}
       		}
-		}		
+		}
 	}
 }
 focus = {
@@ -289,7 +289,7 @@ focus = {
 		focus = MAM_CurleyVictorySpeech
 	}
 	available = {
-		has_political_power = 50
+		has_political_power > 50
 	}
 	completion_reward = {
 		889 = {
@@ -300,7 +300,7 @@ focus = {
 				instant_build = yes
 				}
 		}
-		add_political_power = -50		
+		add_political_power = -50
 	}
 }
 focus = {
@@ -340,7 +340,7 @@ focus = {
 				level = 1
 				instant_build = yes
 				}
-		}	
+		}
 	}
 }
 focus = {
@@ -399,7 +399,7 @@ focus = {
 				level = 2
 				instant_build = yes
 				}
-		}	
+		}
 	}
 }
 focus = {
@@ -435,7 +435,7 @@ focus = {
 				level = 1
 				instant_build = yes
 				}
-		}						
+		}
 	}
 }
 focus = {
@@ -451,7 +451,7 @@ focus = {
 		focus = MAM_FarmEconomicRelief
 	}
 	completion_reward = {
-		add_ideas = MAM_PublicSchools	
+		add_ideas = MAM_PublicSchools
 	}
 }
 focus = {
@@ -474,7 +474,7 @@ focus = {
 	}
 	prerequisite = {
 		focus = MAM_SecureOurSouth2
-	}		
+	}
 	completion_reward = {
 		custom_effect_tooltip = dreamsofsomethinggreatertt
 		add_political_power = 50
