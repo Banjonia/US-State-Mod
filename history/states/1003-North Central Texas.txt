@@ -1,0 +1,21 @@
+state={
+	id=1003
+	name="STATE_1003"
+	resources = {
+		oil = 25.00
+	}
+	history={
+		owner = TXT
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+		}
+		add_core_of = TXT
+	}
+	provinces={
+		1915 7836 7981 12875 
+	}
+	manpower=124712
+	state_category = city
+	buildings_max_level_factor=1.000
+}
