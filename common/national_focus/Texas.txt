@@ -180,7 +180,7 @@ focus_tree = {
 
 		cost = 10
 
-		x = 1
+		x = 2
 		y = 3
 
 		completion_reward = {
@@ -200,6 +200,47 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = TXT_state_railroad_project
+		icon = GFX_Generic_Railroads
+		prerequisite = {
+			focus = TXT_begin_reconstruction
+		}
+
+		cost = 10
+
+		x = 2
+		y = 4
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = TXT_idea_state_railroad
+				days = 730
+			}
+		}
+	}
+	focus = {
+		id = TXT_eliminate_threats
+		icon = GFX_Generic_Arrests
+		prerequisite = {
+			focus = TXT_state_railroad_project
+		}
+		prerequisite = {
+			focus = TXT_austin_railroad_hub
+		}
+
+		cost = 10
+
+		x = 3
+		y = 5
+
+		completion_reward = {
+			add_ideas = {
+				TXT_idea_public_arrests
+			}
+			add_stability = -0.05
+		}
+	}
+	focus = {
 		id = TXT_rebuild_austin
 		icon = GFX_Generic_Railroads
 		prerequisite = {
@@ -208,7 +249,7 @@ focus_tree = {
 
 		cost = 10
 
-		x = 3
+		x = 5
 		y = 3
 
 		completion_reward = {
@@ -232,7 +273,7 @@ focus_tree = {
 
 		cost = 10
 
-		x = 5
+		x = 7
 		y = 4
 
 		completion_reward = {
@@ -247,6 +288,101 @@ focus_tree = {
 			add_stability = 0.05
 		}
 	}
+	focus = {
+		id = TXT_small_arms_austin
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = {
+			focus = TXT_improve_austin
+		}
+
+		cost = 10
+
+		x = 8
+		y = 5
+
+		completion_reward = {
+			1002 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_stability = 0.01
+		}
+	}
+	focus = {
+		id = TXT_subsizide_austin
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = {
+			focus = TXT_improve_austin
+		}
+
+		cost = 10
+
+		x = 6
+		y = 5
+
+		completion_reward = {
+			1002 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_stability = 0.06
+			add_ideas = TXT_idea_subsidized_factories
+		}
+	}
+	focus = {
+		id = TXT_austin_railroad_hub
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = {
+			focus = TXT_rebuild_austin
+		}
+
+		cost = 5
+
+		x = 4
+		y = 4
+
+		completion_reward = {
+			1002 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = TXT_civil_war_recovery
+		icon = GFX_Generic_State_Socialism
+		prerequisite = {
+			focus = TXT_eliminate_threats
+		}
+		prerequisite = {
+			focus = TXT_subsizide_austin
+		}
+
+		cost = 10
+
+		x = 4
+		y = 6
+
+		completion_reward = {
+			remove_ideas = {
+				TXT_idea_civwar
+			}
+		}
+	}
+
 
   ##################Diplomatic Fascism
 	focus = {
@@ -2633,7 +2769,7 @@ focus_tree = {
 					factor = 1
 				}
 			completion_reward = {
-					
+
 				}
 
 	}
