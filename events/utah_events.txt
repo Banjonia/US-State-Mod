@@ -20,10 +20,6 @@ country_event = {
     		ideology = fascism
     		popularity = 0.1
 		}
-		add_popularity = {
-    		ideology = monarchy
-    		popularity = 0.05
-		}
 	}
 	option = {
 		name = arizona_question_option_2.b
@@ -123,7 +119,7 @@ country_event = {
     set_country_flag = socialists_win
     add_stability = -0.08
 		add_popularity = {
-    		ideology = socialist
+    		ideology = democratic
     		popularity = 0.05
 		}
   }

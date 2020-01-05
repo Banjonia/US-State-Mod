@@ -999,7 +999,7 @@ focus_tree = {
     			popularity = 0.03
     		}
     		add_popularity = {
-    			ideology = theocratism
+    			ideology = neutrality
     			popularity = 0.1
     		}
     		add_stability = .02
@@ -1024,7 +1024,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward {
 			add_popularity = {
-    			ideology = socialist
+    			ideology = democratic
     			popularity = 0.06
     		}
     		add_stability = .03
@@ -1048,7 +1048,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward {
 			add_popularity = {
-    			ideology = socialist
+    			ideology = democratic
     			popularity = 0.04
     		}
     		add_popularity = {
@@ -1102,10 +1102,6 @@ focus_tree = {
 			add_popularity = {
     			ideology = neutrality
     			popularity = 0.08
-    		}
-    		add_popularity = {
-    			ideology = monarchy
-    			popularity = 0.10
     		}
     		add_stability = -0.35
 		}
@@ -1296,7 +1292,7 @@ focus_tree = {
     }
 		completion_reward {
 			add_popularity = {
-    			ideology = theocratism
+    			ideology = neutrality
     			popularity = 0.08
     		}
     		add_stability = 0.04
@@ -1313,7 +1309,7 @@ focus_tree = {
     }
 		completion_reward {
 			add_popularity = {
-    			ideology = theocratism
+    			ideology = neutrality
     			popularity = 0.02
     		}
     		add_manpower = 1000
@@ -1377,14 +1373,14 @@ focus_tree = {
         focus = UTU_fascist_mormons
     }
 		available = {
-			theocratism > 0.4
+			neutrality > 0.4
 		}
 		prerequisite = {
       focus = UTU_enforce_church_teachings
     }
 		completion_reward {
 			set_politics = {
-				ruling_party = theocratism
+				ruling_party = neutrality
 				elections_allowed = no
 			}
 		}

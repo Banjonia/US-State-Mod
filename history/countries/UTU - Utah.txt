@@ -140,10 +140,8 @@ add_ideas = {
 }
 set_popularities = {
 	democratic = 70
-	socialist = 5
-	theocratism = 15
-	communism = 2
-	monarchy = 8
+	communism = 14
+	fascism = 16
 }
 1939.1.1 = {
 	set_stability = 0.35
@@ -157,10 +155,8 @@ set_popularities = {
 }
 set_popularities = {
 	democratic = 70
-	socialist = 5
-	theocratism = 15
-	communism = 2
-	monarchy = 8
+	communism = 14
+	fascism = 16
 }
 create_country_leader = {
 	name = "Henry H. Blood"
@@ -170,16 +166,6 @@ create_country_leader = {
 	ideology = liberalism
 	traits = {
 		cornered_fox
-	}
-}
-create_country_leader = {
-	name = "Heber J. Grant"
-	desc = "POLITICS_HEBER_J_GRANT_DESC"
-	picture = "Portrait_UTU_Heber_J_Grant.dds"
-	expire = "1964.1.1"
-	ideology = theocratic
-	traits = {
-		dictator
 	}
 }
 ### Ship Variants ###

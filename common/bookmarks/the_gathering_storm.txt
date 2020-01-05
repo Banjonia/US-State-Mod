@@ -47,20 +47,6 @@ bookmarks = {
 				KSK_steel_plant
 			}
 		}
-
-		"QBC"= {
-			history = "USA_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				QBC_purgedcommidants
-				QBC_newcommidants
-			}
-			focuses = {
-				QBC_communist_watching
-				QBC_national_arsenal
-				QBC_baby_boom
-			}
-		}
 		"FLF"={
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -91,23 +77,10 @@ bookmarks = {
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				
+
 			}
 			focuses = {
 				MAM_TheBostonMeeting
-			}
-		}
-
-		"VAV"= {
-			minor = yes
-			history = "USA_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				#
-			}
-			focuses = {
-				VAV_war
-				vavmonarchy_ethos
 			}
 		}
 		"UTU"= {

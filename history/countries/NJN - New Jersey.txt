@@ -153,10 +153,9 @@ set_popularities = {
 	}
 }
 set_popularities = {
-	democratic = 90
-	communism = 0
-	fascism = 0
-	socialist = 10
+	democratic = 83
+	communism = 7
+	fascism = 10
 }
 create_country_leader = {
 	name = "A. Harry Moore"
@@ -166,15 +165,6 @@ create_country_leader = {
 	ideology = liberalism
 	traits = {
 	strict_austerity_adherent
-	}
-}
-create_country_leader = {
-	name = "John Spain"
-	desc = "POLITICS_A_HARRY_MOORE_DESC"
-	picture = "Portrait_NJN_A_Harry_Moore.dds"
-	expire = "1965.1.1"
-	ideology = social_democrat
-	traits = {
 	}
 }
 create_field_marshal = {

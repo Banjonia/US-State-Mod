@@ -146,16 +146,6 @@ create_country_leader = {
 	traits = {
 	}
 }
-
-create_country_leader = {
-	name = "Henry Chee Dodge"
-	desc = ""
-	picture = "Portrait_AZA_HenryCheeDodge.dds"
-	expire = "1965.1.1"
-	ideology = constitutional
-	traits = {
-	}
-}
 1939.1.1 = {
 	set_stability = 0.7
 

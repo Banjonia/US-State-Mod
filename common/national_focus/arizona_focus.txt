@@ -1433,7 +1433,7 @@ focus_tree = {
 							days = 720
 						}
 					set_politics = {
-							ruling_party = monarchy
+							ruling_party = neutrality
 							elections_allowed = yes
 						}
 					set_political_party = {
@@ -1449,7 +1449,7 @@ focus_tree = {
 							popularity = 15
 						}
 					set_political_party = {
-							ideology = monarchy
+							ideology = neutrality
 							popularity = 65
 						}
 				}
@@ -1467,7 +1467,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 					add_popularity = {
-							ideology = monarchy
+							ideology = neutrality
 							popularity = 0.15
 						}
 					add_stability = 0.05
@@ -1492,11 +1492,11 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 					add_popularity = {
-							ideology = monarchy
+							ideology = neutrality
 							popularity = 0.05
 						}
 					set_politics = {
-							ruling_party = monarchy
+							ruling_party = neutrality
 							elections_allowed = no
 						}
 				}
@@ -2614,7 +2614,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 					add_popularity = {
-							ideology = monarchy
+							ideology = neutrality
 							popularity = 0.10
 							add_war_support = 0.05
 							add_stability = 0.05

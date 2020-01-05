@@ -22,7 +22,7 @@ ideas = {
 			}
 
 			allowed_to_remove = {
-				has_completed_focus = WAW_fund_the_military
+				
 			}
 
 			cancel_if_invalid = no
