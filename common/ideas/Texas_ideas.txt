@@ -31,13 +31,48 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-			political_power_gain = -2
-			justify_war_goal_time = 5
-			enemy_justify_war_goal_time = 0.1
-			fascism_acceptance = 100
-			army_core_attack_factor = -0.25
-			army_core_defence_factor = 0.1
-			join_faction_tension = 1
+				political_power_gain = -2
+				justify_war_goal_time = 5
+				enemy_justify_war_goal_time = 0.1
+				fascism_acceptance = 100
+				army_core_attack_factor = -0.25
+				army_core_defence_factor = 0.1
+				join_faction_tension = 1
+			}
+		}
+
+		TXT_idea_broken_morale = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = -0.1
+				army_defence_factor = -0.1
+				army_attack_factor = -0.1
+				political_power_gain = -1
+			}
+		}
+		TXT_idea_reconstruction = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_infrastructure_factor = 0.25
+				production_speed_bunker_factor = 0.3
+				production_speed_air_base_factor = 0.15
 			}
 		}
 		TXT_idea_rangers = {
@@ -199,9 +234,28 @@ ideas = {
 
 			modifier = {
 				army_morale_factor = 0.1
-				defence = 0.15
-				offence = 0.10
-				partisan_effect = 0.15
+				defence = 0.10
+				offence = 0.05
+				partisan_effect = 0.25
+			}
+		}
+		TXT_idea_democratic_struggle = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = 0.05
+				army_core_defence_factor = 0.10
+				democratic_drift = 0.1
+				drift_defence_factor = 0.1
 			}
 		}
 		TXT_idea_general_rearm = {
@@ -218,9 +272,25 @@ ideas = {
       modifier = {
         conscription = 0.05
         production_speed_arms_factory_factor = 0.1
-        consumer_goods_factor = 0.05
+        consumer_goods_factor = -0.05
       }
     }
+		TXT_idea_hope_for_republic = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.10
+				conscription = 0.015
+				democratic_drift = 0.05
+			}
+		}
 		TXT_idea_democratic_nationalism = {
       allowed = {
         always = no
@@ -236,7 +306,7 @@ ideas = {
         war_support_factor = 0.10
         conscription = 0.025
         non_core_manpower = 0.02
-				fascism_drift = 0.005
+				fascism_drift = 0.01
       }
     }
 

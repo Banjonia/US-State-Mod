@@ -498,6 +498,80 @@ country_event = {
     name = tex.18.a
   }
 }
+country_event = {
+  id = tex.19
+  title = tex.19.t
+  desc = tex.19.d
+  picture = GFX_report_event_british_artillery
+
+  is_triggered_only = yes
+
+  option = {
+    name = tex.19.a
+    hidden_effect = {
+      set_country_flag = TXT_fascistcivwar
+      start_civil_war = {
+        ideology = democratic
+        size = 0.5
+        states = {
+          788 898 999 1001 1003
+        }
+      }
+      random_other_country = {
+				limit = {
+					original_tag = TXT
+					has_government = democratic
+				}
+        set_capital = 999
+				load_oob = "TXT_dem_Civil_War"
+				set_equipment_fraction = 0.5
+				set_stability = 0.23
+				set_war_support = 0.8
+			}
+      TXT = {
+        load_oob = "TXT_fas_civil_war"
+        set_equipment_fraction = 0.5
+        set_stability = 0.23
+        set_war_support = 0.95
+        set_politics = {
+  				ruling_party = fascism
+  				elections_allowed = no
+  			}
+  			set_party_name = {
+  				ideology = fascism
+  				long_name = TXT_Fascism_party_ourown_long
+  				name = TXT_fascism_party_ourown
+  			}
+      }
+    }
+  }
+}
+country_event = {
+  id = tex.20
+  title = tex.20.t
+  desc = tex.20.d
+  picture = GFX_report_event_generic_sign_treaty2
+  fire_only_once = yes
+  trigger = {
+    has_country_flag = TXT_fascistcivwar
+    has_war = no
+  }
+
+  option = {
+    name = tex.20.a
+    add_ideas = {
+      TXT_idea_civwar
+      TXT_idea_broken_morale
+    }
+    delete_unit_template_and_units = {
+      division_template = "Civilian Militia"
+    }
+    hidden_effect = {
+      clr_country_flag = TXT_fascistcivwar
+    }
+  }
+}
+
 ##### News Events
 news_event = {
   id = texasnews.5
