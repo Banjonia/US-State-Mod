@@ -1278,14 +1278,6 @@ focus_tree = {
 
 		completion_reward = {
 				add_ideas = FLF_ReinforceTheStateIdea
-				create_wargoal = {
-						type = annex_everything
-						target = GAG
-					}
-				create_wargoal = {
-						type = annex_everything
-						target = ALA
-					}
 		}
 
 	}
@@ -1305,6 +1297,104 @@ focus_tree = {
 			completion_reward = {
 					add_stability = 0.10
 					add_ideas = FLF_South_Pride
+				}
+
+	}
+	focus = {
+		id = FLF_anothercsa
+		icon = GFX_FLF_Southern_Pride
+		cost = 10.00
+		prerequisite = {
+			focus = FLF_southernpride
+		}
+		x = 31
+		y = 4
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				unlock_decision_tooltip = confederate_states
+				add_war_support = 0.05
+				create_wargoal = {
+					type = annex_everything
+					target = ALA
+					}
+				}
+
+	}
+	focus = {
+		id = FLF_tothenorth
+		icon = GFX_Generic_Tank_through_Wall
+		cost = 10.00
+		prerequisite = {
+			focus = FLF_anothercsa
+		}
+		x = 31
+		y = 5
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				create_wargoal = {
+					type = annex_everything
+					target = ALA
+					}
+				create_wargoal = {
+					type = annex_everything
+					target = GAG
+					}
+				}
+
+	}
+	focus = {
+		id = FLF_eastwardswego
+		icon = GFX_Generic_Ultranationalist_Volunteers
+		cost = 10.00
+		prerequisite = {
+			focus = FLF_tothenorth
+		}
+		x = 33
+		y = 6
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				create_wargoal = {
+					type = annex_everything
+					target = NCN
+					}
+				create_wargoal = {
+					type = annex_everything
+					target = SCS
+					}
+				}
+
+	}
+	focus = {
+		id = FLF_westwardswego
+		icon = GFX_Generic_Ultranationalist_Volunteers
+		cost = 10.00
+		prerequisite = {
+			focus = FLF_tothenorth
+		}
+		x = 29
+		y = 6
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				create_wargoal = {
+					type = annex_everything
+					target = MSM
+					}
+				create_wargoal = {
+					type = annex_everything
+					target = LAL
+					}
 				}
 
 	}
@@ -1560,6 +1650,31 @@ focus_tree = {
 			completion_reward = {
 					add_stability = 0.25
 					add_ideas = FLF_Purged_Radicals
+				}
+
+	}
+	focus = {
+		id = FLF_savetheproletariat
+		icon = GFX_Generic_Army_Focus_Red02
+		cost = 10.00
+		prerequisite = {
+			focus = FLF_purgetheradicals
+		}
+		x = 25
+		y = 5
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				create_wargoal = {
+					type = annex_everything
+					target = ALA
+					}
+				create_wargoal = {
+					type = annex_everything
+					target = GAG
+					}
 				}
 
 	}

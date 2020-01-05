@@ -252,7 +252,6 @@ icon = generic_form_nation
   cancel_if_not_visible = yes
 
   visible = {
-  or = {
     original_tag = SCS
     original_tag = NCN
     original_tag = TNT
@@ -261,9 +260,12 @@ icon = generic_form_nation
     original_tag = GAG
     original_tag = ALA
     original_tag = MSM
-    original_tag = FLF
     original_tag = ARA
     original_tag = LAL
+  or = {
+    FLF = {
+      has_completed_focus = FLF_anothercsa
+      }
     }
   }
 
