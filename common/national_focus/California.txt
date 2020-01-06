@@ -62,10 +62,7 @@ focus_tree = {
 		cost = 7.25
 		x = 5
 		y = 0
-		ai_will_do = {
-			factor = 5
-		}
-			completion_reward = {
+		completion_reward = {
 					967 = {
 							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
@@ -1216,9 +1213,7 @@ focus_tree = {
 			focus = CAC_uptonsinclairsplan
 			focus = CAC_JamesEDavis
 		}
-		ai_will_do = {
-			factor = 70
-		}
+
 		x = 19
 		y = 2
 			cancel_if_invalid = yes

@@ -10,7 +10,7 @@ country_event = {
 
     option = {
 		name = california.1.a
-		ai_chance = { factor = 0}
+		ai_chance = { base = 25 }
 
       create_country_leader = {
         name = "James E. Davis"
@@ -43,7 +43,7 @@ country_event = {
 
     option = {
 		name = california.1.b
-		ai_chance = { factor = 100}
+		ai_chance = { base = 50 }
 		add_political_power = 75
 		add_stability = 0.05
 
@@ -53,7 +53,7 @@ country_event = {
 
     option = {
 		name = california.1.c
-		ai_chance = { factor = 0}
+		ai_chance = { base = 25 }
 		add_stability = -0.10
 		add_political_power = -50
 
