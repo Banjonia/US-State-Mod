@@ -177,6 +177,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_forgeourownpath
 		}
+		available = {
+			has_war = no
+		}
 
 		cost = 10
 
@@ -237,6 +240,10 @@ focus_tree = {
 			add_ideas = {
 				TXT_idea_public_arrests
 			}
+			add_timed_idea = {
+				idea = TXT_idea_purged
+				days = 365
+			}
 			add_stability = -0.05
 		}
 	}
@@ -245,6 +252,9 @@ focus_tree = {
 		icon = GFX_Generic_Railroads
 		prerequisite = {
 			focus = TXT_forgeourownpath
+		}
+		available = {
+			has_war = no
 		}
 
 		cost = 10
@@ -373,7 +383,7 @@ focus_tree = {
 
 		cost = 10
 
-		x = 4
+		x = 5
 		y = 6
 
 		completion_reward = {
@@ -382,7 +392,305 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = TXT_from_the_grave
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = {
+			focus = TXT_civil_war_recovery
+		}
 
+		cost = 10
+
+		x = 5
+		y = 7
+
+		completion_reward = {
+			add_stability = 0.15
+		}
+	}
+	focus = {
+		id = TXT_resuscitate_the_army
+		icon = GFX_Generic_Army_Focus_Red02
+		prerequisite = {
+			focus = TXT_eliminate_threats
+		}
+
+		cost = 10
+
+		x = 2
+		y = 6
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TXT_idea_broken_morale
+				add_idea = TXT_idea_lowered_morale
+	    }
+		}
+	}
+	focus = {
+		id = TXT_extensive_consctriptionF
+		icon = GFX_Generic_Outside_Aid
+		prerequisite = {
+			focus = TXT_resuscitate_the_army
+		}
+
+		cost = 10
+
+		x = 1
+		y = 7
+
+		completion_reward = {
+			add_ideas = extensive_conscription
+		}
+	}
+	focus = {
+		id = TXT_extensive_trainingF
+		icon = GFX_Generic_Crouched_Soldier
+		prerequisite = {
+			focus = TXT_resuscitate_the_army
+		}
+
+		cost = 10
+
+		x = 3
+		y = 7
+
+		completion_reward = {
+			add_ideas = TXT_idea_extensive_training
+		}
+	}
+	focus = {
+		id = TXT_our_grand_army
+		icon = GFX_Generic_Coalition_Army
+		prerequisite = {
+			focus = TXT_extensive_trainingF
+		}
+		prerequisite = {
+			focus = TXT_extensive_consctriptionF
+		}
+
+		cost = 10
+
+		x = 2
+		y = 8
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TXT_idea_lowered_morale
+				add_idea = TXT_idea_grand_army
+			}
+		}
+	}
+	focus = {
+		id = TXT_our_new_empire
+		icon = GFX_Generic_Ultranationalist_Government
+		prerequisite = {
+			focus = TXT_our_grand_army
+			focus = TXT_from_the_grave
+		}
+
+		cost = 10
+
+		x = 4
+		y = 9
+
+		completion_reward = {
+			add_ideas = {
+				TXT_idea_our_new_empire
+			}
+		}
+	}
+	focus = {
+		id = TXT_reclaim_lands
+		icon = GFX_Generic_German_Soldiers2
+		prerequisite = {
+			focus = TXT_our_new_empire
+		}
+
+		will_lead_to_war_with = NMN
+
+		cost = 10
+
+		x = 5
+		y = 10
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = NMN
+			}
+		}
+	}
+	focus = {
+		id = TXT_exploit_resources
+		icon = GFX_focus_generic_steel
+		prerequisite = {
+			focus = TXT_reclaim_lands
+		}
+		available = {
+			owns_state = 950
+		}
+
+		cost = 5
+
+		x = 5
+		y = 11
+
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 30
+				state = 950
+			}
+		}
+	}
+	focus = {
+		id = TXT_military_youthF
+		icon = GFX_Generic_Autonomy
+		prerequisite = {
+			focus = TXT_our_new_empire
+		}
+
+		x = 3
+		y = 10
+
+		completion_reward = {
+			add_ideas = {
+				TXT_idea_military_youth
+			}
+		}
+	}
+	focus = {
+		id = TXT_our_natural_borders
+		icon = GFX_Generic_Draw_Up_Plans
+		prerequisite = {
+			focus = TXT_our_new_empire
+		}
+
+		will_lead_to_war_with = ARA
+		will_lead_to_war_with = LAL
+
+		cost = 10
+
+		x = 1
+		y = 10
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = LAL
+				gennerator = {
+					834 835 371
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ARA
+			}
+		}
+	}
+	focus = {
+		id = TXT_fortify_mississippi
+		icon = GFX_goal_generic_construct_military
+
+		prerequisite = {
+			focus = TXT_our_natural_borders
+		}
+
+		available = {
+			owns_state = 371
+			owns_state = 835
+			owns_state = 834
+		}
+
+		cost = 10
+
+		x = 1
+		y = 11
+
+		completion_reward = {
+			834 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					location = 12398
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					location = 4535
+					instant_build = yes
+				}
+			}
+			835 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					location = 1643
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					location = 7599
+					instant_build = yes
+				}
+			}
+			371 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					location = 1559
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TXT_fortify_mississippi2
+		icon = GFX_goal_generic_construction
+
+		prerequisite = {
+			focus = TXT_our_natural_borders
+		}
+
+		available = {
+			has_completed_focus = TXT_fortify_mississippi
+			owns_state = 372
+			owns_state = 838
+		}
+
+		cost = 10
+
+		x = 3
+		y = 11
+
+		completion_reward = {
+			838 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					location = 10355
+					instant_build = yes
+				}
+			}
+			372 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					location = 1646
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					location = 4625
+					instant_build = yes
+				}
+			}
+		}
+	}
 
   ##################Diplomatic Fascism
 	focus = {
@@ -1545,6 +1853,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = TXT_general_rearmament
+		}
+		bypass = {
+			has_idea = limited_conscription
 		}
 		x = 21
 		y = 10

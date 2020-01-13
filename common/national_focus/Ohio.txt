@@ -1041,6 +1041,9 @@ focus_tree = {
 		prerequisite = {
 			focus = OHO_rearmament
 		}
+		bypass = {
+			has_idea = limited_conscription
+		}
 		x = 27
 		y = 2
 		completion_reward = {

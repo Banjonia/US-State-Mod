@@ -14,7 +14,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				high_command_cost_factor = -0.25
 				political_advisor_cost_factor = -0.25
+				command_power_gain = -0.5
 			}
 		}
 
@@ -40,7 +42,37 @@ ideas = {
 				join_faction_tension = 1
 			}
 		}
+		TXT_idea_extensive_training = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
 
+			removal_cost = -1
+
+			modifier = {
+				training_time_army_factor = 0.1
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		TXT_idea_grand_army = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.1
+				army_core_defence_factor = 0.15
+			}
+		}
 		TXT_idea_broken_morale = {
 			allowed = {
 				always = no
@@ -55,7 +87,24 @@ ideas = {
 				army_morale_factor = -0.1
 				army_defence_factor = -0.1
 				army_attack_factor = -0.1
-				political_power_gain = -1
+				political_power_gain = -0.5
+			}
+		}
+		TXT_idea_lowered_morale = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = -0.05
+				army_defence_factor = -0.05
+				army_attack_factor = -0.075
+				political_power_gain = -0
 			}
 		}
 		TXT_idea_reconstruction = {
@@ -233,6 +282,39 @@ ideas = {
 				democratic_drift = -0.05
 				communism_drift = -0.05
 				neutrality_drift = -0.05
+				fascism_drift = 0.15
+			}
+		}
+		TXT_idea_our_new_empire = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				justify_war_goal_time = -0.5
+				stability_weekly = 0.01
+				offensive_war_stability_factor = 0.3
+				surrender_limit = 0.1
+			}
+		}
+		TXT_idea_military_youth = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.015
+				training_time_army_factor = -0.05
 			}
 		}
 		TXT_idea_high_command_support = {
