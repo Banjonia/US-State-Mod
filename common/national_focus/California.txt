@@ -1551,9 +1551,9 @@ focus_tree = {
 			set_rule = {
 				can_create_factions = yes
 				}
-				set_rule = {
-					can_send_volunteers = yes
-					}
+			set_rule = {
+				can_send_volunteers = yes
+				}
 					create_faction = "california_democratic_faction"
 					hidden_effect = {
 						news_event = {
@@ -2297,6 +2297,9 @@ focus_tree = {
 
 		completion_reward = {
 			create_faction = CAC_communistfaction
+			set_rule = {
+				can_create_factions = yes
+				}
 		}
 	}
 
@@ -2919,6 +2922,9 @@ focus_tree = {
 		y = 8
 			completion_reward = {
 				add_ideas = CAC_internationalrecognitionidea
+				set_rule = {
+					can_create_factions = yes
+					}
 				}
 	}
 

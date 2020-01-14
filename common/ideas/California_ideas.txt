@@ -108,11 +108,11 @@ ideas = {
         modifier = {
           max_command_power = 20
           guarantee_cost = -0.5
-          enemy_justify_war_goal_time = 0.2
-          justify_war_goal_time = -0.30
+          enemy_justify_war_goal_time = 0.15
+          justify_war_goal_time = -0.25
           generate_wargoal_tension = -1
           ai_focus_aggressive_factor = 0.25
-          subversive_activites_upkeep = -0.25
+          subversive_activites_upkeep = -0.15
         }
       }
 
