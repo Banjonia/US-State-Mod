@@ -108,7 +108,7 @@ country_event = {
 					all_provinces = yes
 					limit_to_border = yes
 				}
-      }
+      		}
 		}
     974 = {
 		add_building_construction = {
