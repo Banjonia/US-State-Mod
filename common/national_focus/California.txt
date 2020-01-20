@@ -270,7 +270,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAC_armylloydsway5
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_CAC_SF
 		cost = 10.00
 		prerequisite = {
 			focus = CAC_armylloydsway4

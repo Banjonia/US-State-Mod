@@ -911,6 +911,10 @@ SpriteType = {
   name = "GFX_CAC_skewer_pheonix"
   texturefile = "gfx/interface/goals/CAC_skewer_pheonix.dds"
 }
+SpriteType = {
+  name = "GFX_CAC_SF"
+  texturefile = "gfx/interface/goals/CAC_SF.dds"
+}
 ###########################################################################################################################
 
 
