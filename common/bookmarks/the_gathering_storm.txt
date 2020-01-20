@@ -27,10 +27,10 @@ bookmarks = {
 				CAC_aloyaldemocraticarmy
 				CAC_dustbowlmigration
 			}
-			focuses= {
-				CAC_frankmerriamsplans
-				CAC_JamesEDavis
-				CAC_uptonsinclairsplan
+			focuses = {
+				CAC_army1
+				CAC_localsecurity
+				CAC_politicalstate
 			}
 		}
 
